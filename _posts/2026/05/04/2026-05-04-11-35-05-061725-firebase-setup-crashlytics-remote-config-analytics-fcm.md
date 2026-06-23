@@ -105,7 +105,7 @@ final isDemo = remoteConfig.getString('env_app_demo') == '1';
 ```dart
 // 기기 제어 이벤트 기록
 await FirebaseAnalytics.instance.logEvent(
-  name: 'boiler_power_toggle',
+  name: 'iot_device_power_toggle',
   parameters: {
     'device_id': deviceId,
     'action': isOn ? 'turn_on' : 'turn_off',

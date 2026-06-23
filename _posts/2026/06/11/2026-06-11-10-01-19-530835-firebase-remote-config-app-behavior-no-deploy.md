@@ -40,7 +40,7 @@ Future<(String, bool)> checkDemoMode(String environment) async {
   await remoteConfig.setDefaults({
     'env_app_demo': '0',      // 0: 운영, 1: 데모
     'feature_automation': 'true',
-    'feature_scada': 'true',
+    'feature_iot_dashboard': 'true',
     'max_devices_per_space': '10',
   });
 
@@ -67,7 +67,7 @@ class RemoteConfigService {
   }
 
   bool get isScadaEnabled {
-    return _config.getBool('feature_scada');
+    return _config.getBool('feature_iot_dashboard');
   }
 
   int get maxDevicesPerSpace {
@@ -104,7 +104,7 @@ Obx(() {
 
 ## 데모 모드 구현
 
-앱 스토어 심사 시 심사자가 실제 보일러 없이도 앱을 테스트할 수 있도록 데모 모드를 제공한다:
+앱 스토어 심사 시 심사자가 실제 IoT 기기 없이도 앱을 테스트할 수 있도록 데모 모드를 제공한다:
 
 ```dart
 // main.dart에서 환경 결정

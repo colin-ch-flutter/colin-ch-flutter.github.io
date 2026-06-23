@@ -148,7 +148,7 @@ flutter pub run build_runner build
 
 ```dart
 @override
-Future<ApiResult<List<BoilerDevice>>> getDevices(String spaceId) async {
+Future<ApiResult<List<IoT DeviceDevice>>> getDevices(String spaceId) async {
   try {
     final response = await _apiService.get(
       '/v1/spaces/$spaceId/devices',

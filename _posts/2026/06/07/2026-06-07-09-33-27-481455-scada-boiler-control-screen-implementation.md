@@ -1,31 +1,31 @@
 ---
 layout: post
-title: "SCADA 보일러 제어 화면 구현"
+title: "IoT 모니터링 대시보드 기기 제어 화면 구현"
 description: " "
 date: 2026-06-07
-tags: [Flutter, SCADA, UI, 보일러제어, GetX]
+tags: [Flutter, IoT 모니터링 대시보드, UI, IoT 기기제어, GetX]
 comments: true
 share: true
 ---
 
-# SCADA 보일러 제어 화면 구현
+# IoT 모니터링 대시보드 기기 제어 화면 구현
 
-![보일러 제어](https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80)
+![IoT 기기 제어](https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80)
 
-## SCADA 제어 화면의 복잡도
+## IoT 모니터링 대시보드 제어 화면의 복잡도
 
-일반 보일러 제어 화면보다 훨씬 복잡하다. 여러 존(Zone), 알람 목록, 에너지 데이터, 운전 이력 등 많은 정보를 한 화면에서 제공해야 한다.
+일반 기기 제어 화면보다 훨씬 복잡하다. 여러 존(Zone), 알람 목록, 에너지 데이터, 운전 이력 등 많은 정보를 한 화면에서 제공해야 한다.
 
 탭 구조로 화면을 나눴다:
 - **제어 탭**: 메인 상태 + 존별 제어
 - **알람 탭**: 현재 알람 목록
 - **설정 탭**: 기기 설정
 
-## BoilerScadaControlView 구조
+## IoT DeviceScadaControlView 구조
 
 ```dart
-class BoilerScadaControlView extends GetView<BoilerScadaControlController> {
-  const BoilerScadaControlView({super.key});
+class IoT DeviceScadaControlView extends GetView<IoT DeviceScadaControlController> {
+  const IoT DeviceScadaControlView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class BoilerScadaControlView extends GetView<BoilerScadaControlController> {
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
-            onPressed: () => Get.toNamed(Routes.boilerScadaSetting),
+            onPressed: () => Get.toNamed(Routes.iot_deviceScadaSetting),
           ),
         ],
       ),
@@ -64,9 +64,9 @@ class BoilerScadaControlView extends GetView<BoilerScadaControlController> {
         );
       }),
       bottomNavigationBar: _BottomNavBar(
-        onScheduleTap: () => Get.toNamed(Routes.boilerScadaSchedule),
-        onHistoryTap: () => Get.toNamed(Routes.boilerScadaHistory),
-        onEmsTap: () => Get.toNamed(Routes.boilerScadaEms),
+        onScheduleTap: () => Get.toNamed(Routes.iot_deviceScadaSchedule),
+        onHistoryTap: () => Get.toNamed(Routes.iot_deviceScadaHistory),
+        onEmsTap: () => Get.toNamed(Routes.iot_deviceScadaEms),
       ),
     );
   }
@@ -158,7 +158,7 @@ class _ZoneCard extends StatelessWidget {
 
 ## 알람 처리
 
-SCADA 시스템에서 알람은 중요하다. 경고(Warning)와 오류(Error)를 시각적으로 구분해서 표시한다:
+IoT 모니터링 대시보드 시스템에서 알람은 중요하다. 경고(Warning)와 오류(Error)를 시각적으로 구분해서 표시한다:
 
 ```dart
 class _AlarmBanner extends StatelessWidget {

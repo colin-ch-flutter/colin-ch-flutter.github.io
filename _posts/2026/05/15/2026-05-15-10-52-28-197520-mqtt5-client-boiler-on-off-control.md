@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "mqtt5_client로 보일러 On/Off 제어하기"
+title: "mqtt5_client로 IoT 기기 On/Off 제어하기"
 description: " "
 date: 2026-05-15
-tags: [Flutter, MQTT5, 보일러제어, IoT, Dart]
+tags: [Flutter, MQTT5, IoT 기기제어, IoT, Dart]
 comments: true
 share: true
 ---
 
-# mqtt5_client로 보일러 On/Off 제어하기
+# mqtt5_client로 IoT 기기 On/Off 제어하기
 
 ![스마트홈 컨트롤](https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80)
 
@@ -87,7 +87,7 @@ _iotService.messageStream.listen((messages) {
 });
 ```
 
-## 보일러 전원 제어 발행
+## IoT 기기 전원 제어 발행
 
 ```dart
 Future<void> publishPowerControl(String deviceId, bool isOn) async {
@@ -137,13 +137,13 @@ Future<void> publishTemperatureControl(String deviceId, int temperature) async {
 명령을 보낸 후 기기의 응답을 기다리는 패턴:
 
 ```dart
-Future<BoilerStatus> sendCommandAndWait(
+Future<IoT DeviceStatus> sendCommandAndWait(
   String deviceId,
   Map<String, dynamic> command, {
   Duration timeout = const Duration(seconds: 10),
 }) async {
   final requestId = const Uuid().v4();
-  final completer = Completer<BoilerStatus>();
+  final completer = Completer<IoT DeviceStatus>();
   
   // 응답 대기 등록
   _pendingRequests[requestId] = completer;
@@ -167,17 +167,17 @@ void _handleMessage(String topic, String payload) {
   
   if (requestId != null && _pendingRequests.containsKey(requestId)) {
     final completer = _pendingRequests.remove(requestId)!;
-    completer.complete(BoilerStatus.fromJson(data));
+    completer.complete(IoT DeviceStatus.fromJson(data));
   }
   
   // 스트림에도 발행 (전체 상태 업데이트)
-  _statusController.add(BoilerStatus.fromJson(data));
+  _statusController.add(IoT DeviceStatus.fromJson(data));
 }
 ```
 
-## 실제로 보일러가 응답했을 때의 감동
+## 실제로 IoT 기기가 응답했을 때의 감동
 
-개발하다 보면 가끔 "이게 진짜 동작하네"라는 순간이 온다. 에뮬레이터에서 On 버튼을 누르자 실제 보일러 불이 켜지는 걸 처음 봤을 때가 그랬다. 앱에서 MQTT로 명령을 보내면 AWS IoT Core를 거쳐서 보일러까지 전달되는데, 그 전체 여정이 1-2초 안에 이루어진다.
+개발하다 보면 가끔 "이게 진짜 동작하네"라는 순간이 온다. 에뮬레이터에서 On 버튼을 누르자 실제 IoT 기기 불이 켜지는 걸 처음 봤을 때가 그랬다. 앱에서 MQTT로 명령을 보내면 AWS IoT Core를 거쳐서 IoT 기기까지 전달되는데, 그 전체 여정이 1-2초 안에 이루어진다.
 
 ---
 

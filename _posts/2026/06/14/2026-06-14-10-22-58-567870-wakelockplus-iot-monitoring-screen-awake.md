@@ -14,7 +14,7 @@ share: true
 
 ## 왜 화면이 꺼지면 안 되는가
 
-IoT 대시보드나 SCADA 제어 화면을 모니터로 쓰는 경우가 있다. 벽에 태블릿을 달아두고 실시간 기기 상태를 보여주는 용도다. 이럴 때 화면 자동 꺼짐이 동작하면 계속 켜야 하는 불편함이 생긴다.
+IoT 대시보드나 IoT 모니터링 대시보드 제어 화면을 모니터로 쓰는 경우가 있다. 벽에 태블릿을 달아두고 실시간 기기 상태를 보여주는 용도다. 이럴 때 화면 자동 꺼짐이 동작하면 계속 켜야 하는 불편함이 생긴다.
 
 또는 BLE 프로비저닝 과정처럼 진행 중인 작업이 있을 때 화면이 꺼지면 사용자가 다시 켜야 하는 번거로움이 있다.
 
@@ -50,11 +50,11 @@ class Sphere extends StatelessWidget {
 항상 켜두는 게 배터리에 부담이 된다면, 특정 화면에서만 적용할 수 있다:
 
 ```dart
-class BoilerScadaControlController extends GetxController {
+class IoT DeviceScadaControlController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    // SCADA 제어 화면 진입 시 wakelock 켜기
+    // IoT 모니터링 대시보드 제어 화면 진입 시 wakelock 켜기
     WakelockPlus.enable();
   }
 
@@ -123,7 +123,7 @@ class WakelockManager extends GetxController with WidgetsBindingObserver {
 
 ## 배터리 소모 고려사항
 
-화면을 항상 켜두면 배터리 소모가 크게 늘어난다. 스마트홈 앱에서는 앱 전체에 wakelock을 켰는데, 이유가 있다. 보일러 제어 앱 특성상 사용자가 화면을 보고 있는 중에 갑자기 꺼지면 제어 동작을 확인할 수 없기 때문이다.
+화면을 항상 켜두면 배터리 소모가 크게 늘어난다. 스마트홈 앱에서는 앱 전체에 wakelock을 켰는데, 이유가 있다. IoT 기기 제어 앱 특성상 사용자가 화면을 보고 있는 중에 갑자기 꺼지면 제어 동작을 확인할 수 없기 때문이다.
 
 배터리 절약이 중요한 앱이라면:
 1. 특정 화면에서만 적용

@@ -40,7 +40,7 @@ GetBuilder<MyController>(
 
 ```dart
 // 나쁜 예: 온도만 바뀌어도 전체가 리빌드됨
-final Rx<BoilerStatus> status = BoilerStatus.empty().obs;
+final Rx<IoT DeviceStatus> status = IoT DeviceStatus.empty().obs;
 
 Obx(() => Column(
   children: [
@@ -54,7 +54,7 @@ Obx(() => Column(
 ```dart
 // 좋은 예: 각각 독립적으로 구독
 final RxDouble temperature = 0.0.obs;
-final Rx<BoilerMode> mode = BoilerMode.heating.obs;
+final Rx<IoT DeviceMode> mode = IoT DeviceMode.heating.obs;
 final RxString? errorCode = Rxn<String>();
 
 // 각 위젯이 필요한 값만 구독

@@ -16,7 +16,7 @@ share: true
 
 BLE 연결은 생각보다 불안정하다. 프로비저닝 과정은 짧게는 30초, 길게는 1-2분이 걸리는데, 이 시간 동안 연결이 끊길 수 있는 원인이 여럿 있다:
 
-- **거리**: 스마트폰을 보일러에서 너무 멀리 들고 가는 경우
+- **거리**: 스마트폰을 IoT 기기에서 너무 멀리 들고 가는 경우
 - **전파 간섭**: 전자레인지, 다른 WiFi 기기의 간섭
 - **iOS 백그라운드 제한**: 앱이 백그라운드로 가면 BLE 연결이 끊길 수 있음
 - **기기 측 타임아웃**: ESP32에서 일정 시간 통신이 없으면 연결을 끊는 경우
@@ -109,10 +109,10 @@ String bleErrorToUserMessage(dynamic error) {
   final msg = error.toString().toLowerCase();
   
   if (msg.contains('timeout')) {
-    return '연결 시간이 초과됐습니다. 스마트폰을 보일러 가까이에서 다시 시도해주세요.';
+    return '연결 시간이 초과됐습니다. 스마트폰을 IoT 기기 가까이에서 다시 시도해주세요.';
   }
   if (msg.contains('not found') || msg.contains('device not found')) {
-    return '기기를 찾을 수 없습니다. 보일러 전원이 켜져 있는지 확인해주세요.';
+    return '기기를 찾을 수 없습니다. IoT 기기 전원이 켜져 있는지 확인해주세요.';
   }
   if (msg.contains('permission')) {
     return '블루투스 권한이 필요합니다.';

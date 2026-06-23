@@ -78,7 +78,7 @@ Future<void> discoverServices() async {
 
 ## Notify 구독
 
-보일러에서 응답이 올 때 알림을 받으려면 Notify 구독을 해야 한다:
+IoT 기기에서 응답이 올 때 알림을 받으려면 Notify 구독을 해야 한다:
 
 ```dart
 // Notify 활성화
@@ -93,7 +93,7 @@ notifyChar.lastValueStream.listen((data) {
 
 ## Write 구현
 
-보일러에 데이터를 보낼 때:
+IoT 기기에 데이터를 보낼 때:
 
 ```dart
 // WithoutResponse: 응답을 기다리지 않음 (빠름)

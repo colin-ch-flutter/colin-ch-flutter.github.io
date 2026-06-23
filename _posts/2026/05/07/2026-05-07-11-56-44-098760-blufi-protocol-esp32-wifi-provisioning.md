@@ -27,14 +27,14 @@ BLE 방식이 가장 안정적이고 사용자 경험도 좋아서 선택했다.
 
 ## BluFi 프로토콜 소개
 
-BluFi는 Espressif Systems에서 만든 프로토콜이다. 스마트 보일러에는 ESP32 칩이 들어있고, ESP32 펌웨어에 BluFi 스택이 구현되어 있다.
+BluFi는 Espressif Systems에서 만든 프로토콜이다. 스마트 IoT 기기에는 ESP32 칩이 들어있고, ESP32 펌웨어에 BluFi 스택이 구현되어 있다.
 
 앱에서는 이 프로토콜에 맞게 BLE 패킷을 만들어서 보내야 한다. Espressif에서 Android/iOS SDK를 제공하지만, Flutter용은 없어서 직접 구현해야 했다.
 
 ## 통신 흐름
 
 ```
-스마트폰 앱                   ESP32 보일러
+스마트폰 앱                   ESP32 IoT 기기
     |                              |
     |--- BLE 연결 요청 ----------->|
     |<-- 연결 수락 ----------------|

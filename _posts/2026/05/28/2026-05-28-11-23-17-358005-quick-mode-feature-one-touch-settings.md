@@ -16,7 +16,7 @@ share: true
 
 퀵 모드는 자주 사용하는 설정 조합을 프리셋으로 저장해두고, 원터치로 여러 기기에 동시 적용하는 기능이다.
 
-예를 들어 "외출 모드"를 만들어두면, 버튼 하나로 모든 방의 보일러를 외출 모드로 전환할 수 있다. "취침 모드"를 만들면 온도를 낮추고 조용한 운전으로 전환한다.
+예를 들어 "외출 모드"를 만들어두면, 버튼 하나로 모든 방의 IoT 기기를 외출 모드로 전환할 수 있다. "취침 모드"를 만들면 온도를 낮추고 조용한 운전으로 전환한다.
 
 특히 여러 기기가 있을 때 빛을 발한다. 방마다 기기가 있다면 개별로 설정을 바꾸는 건 번거롭다.
 
@@ -43,7 +43,7 @@ class QuickMode {
 class QuickModeDevice {
   final String deviceId;
   final String deviceNickname;
-  final BoilerMode mode;
+  final IoT DeviceMode mode;
   final int? targetTemp;
 
   const QuickModeDevice({
@@ -61,7 +61,7 @@ class QuickModeDevice {
 
 1. **이름 입력 + 아이콘 선택** (`QuickAddView`)
 2. **기기 선택** (`QuickDeviceAddView`) - 어떤 기기를 포함할지
-3. **기기별 설정** (`QuickBoilerMainView`, `QuickBoilerModeView`) - 각 기기에 어떤 설정을 적용할지
+3. **기기별 설정** (`QuickIoT DeviceMainView`, `QuickIoT DeviceModeView`) - 각 기기에 어떤 설정을 적용할지
 
 ```dart
 // QuickAddController

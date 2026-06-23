@@ -17,7 +17,7 @@ share: true
 FCM으로 서버에서 알림을 보내는 것과 달리, 로컬 알림은 앱 자체에서 발생시키는 알림이다. 이런 경우에 필요하다:
 
 - 포그라운드에서 FCM 메시지를 수신하고 알림으로 표시
-- 앱 내에서 설정한 예약 알림 (예: "30분 후 보일러 켜기 알림")
+- 앱 내에서 설정한 예약 알림 (예: "30분 후 IoT 기기 켜기 알림")
 - 스케줄 실행 전 미리 알림
 
 ## 초기화
@@ -51,14 +51,14 @@ class LocalNotificationService {
   Future<void> _createChannels() async {
     const channels = [
       AndroidNotificationChannel(
-        'boiler_alerts',
-        '보일러 알림',
+        'iot_device_alerts',
+        'IoT 기기 알림',
         description: '기기 이상, 오류 알림',
         importance: Importance.high,
       ),
       AndroidNotificationChannel(
-        'boiler_info',
-        '보일러 정보',
+        'iot_device_info',
+        'IoT 기기 정보',
         description: '예열 완료, 모드 변경 등 일반 알림',
         importance: Importance.defaultImportance,
       ),
@@ -82,13 +82,13 @@ Future<void> showNotification({
   required int id,
   required String title,
   required String body,
-  String channelId = 'boiler_info',
+  String channelId = 'iot_device_info',
   String? payload,
 }) async {
   final androidDetails = AndroidNotificationDetails(
     channelId,
-    channelId == 'boiler_alerts' ? '보일러 알림' : '보일러 정보',
-    importance: channelId == 'boiler_alerts'
+    channelId == 'iot_device_alerts' ? 'IoT 기기 알림' : 'IoT 기기 정보',
+    importance: channelId == 'iot_device_alerts'
         ? Importance.high
         : Importance.defaultImportance,
     priority: Priority.high,
@@ -115,7 +115,7 @@ Future<void> showNotification({
 
 ## 예약 알림
 
-보일러 스케줄이 실행되기 전에 미리 알림을 보내는 경우:
+IoT 기기 스케줄이 실행되기 전에 미리 알림을 보내는 경우:
 
 ```dart
 Future<void> scheduleNotification({
@@ -132,7 +132,7 @@ Future<void> scheduleNotification({
     tz.TZDateTime.from(scheduledDate, tz.local),
     NotificationDetails(
       android: const AndroidNotificationDetails(
-        'boiler_schedule',
+        'iot_device_schedule',
         '스케줄 알림',
       ),
     ),
@@ -172,11 +172,11 @@ void _onNotificationTapped(NotificationResponse response) {
     final type = data['type'] as String?;
 
     switch (type) {
-      case 'boiler_error':
-        Get.toNamed(Routes.boilerControl, arguments: data);
+      case 'iot_device_error':
+        Get.toNamed(Routes.iot_deviceControl, arguments: data);
         break;
       case 'schedule_reminder':
-        Get.toNamed(Routes.boilerSchedule);
+        Get.toNamed(Routes.iot_deviceSchedule);
         break;
       default:
         Get.toNamed(Routes.notificationList);

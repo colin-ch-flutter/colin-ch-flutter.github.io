@@ -14,7 +14,7 @@ share: true
 
 ## IoT 앱에서 오프라인이 중요한 이유
 
-사용자가 앱을 열었는데 "연결 없음" 에러만 보이면 당황스럽다. 특히 보일러 앱은 집 안에서 열리는 경우가 많은데, 집 WiFi가 잠깐 끊기거나 이동통신 신호가 약한 경우가 있다.
+사용자가 앱을 열었는데 "연결 없음" 에러만 보이면 당황스럽다. 특히 IoT 앱은 집 안에서 열리는 경우가 많은데, 집 WiFi가 잠깐 끊기거나 이동통신 신호가 약한 경우가 있다.
 
 이럴 때 마지막으로 받은 기기 상태라도 보여주는 게 훨씬 나은 UX다.
 
@@ -53,19 +53,19 @@ class AppCacheImpl implements AppCache {
   final GetStorage _storage = GetStorage();
   
   @override
-  Future<void> saveDeviceList(List<BoilerDevice> devices) async {
+  Future<void> saveDeviceList(List<IoT DeviceDevice> devices) async {
     final json = devices.map((d) => d.toJson()).toList();
     await _storage.write('cached_devices', json);
     await _storage.write('cached_devices_at', DateTime.now().toIso8601String());
   }
   
   @override
-  List<BoilerDevice>? loadDeviceList() {
+  List<IoT DeviceDevice>? loadDeviceList() {
     final json = _storage.read<List>('cached_devices');
     if (json == null) return null;
     
     return json
-        .map((j) => BoilerDevice.fromJson(j as Map<String, dynamic>))
+        .map((j) => IoT DeviceDevice.fromJson(j as Map<String, dynamic>))
         .toList();
   }
   
@@ -88,7 +88,7 @@ class ApiRepositoryImpl implements ApiRepository {
   final AppCache _cache;
 
   @override
-  Future<ApiResult<List<BoilerDevice>>> getDevices(String spaceId) async {
+  Future<ApiResult<List<IoT DeviceDevice>>> getDevices(String spaceId) async {
     // 1. 캐시 데이터 먼저 반환 (있을 경우)
     final cached = _cache.loadDeviceList();
     
@@ -114,29 +114,29 @@ class ApiRepositoryImpl implements ApiRepository {
 
 ## MQTT 스냅샷 캐시
 
-MQTT로 받은 보일러 상태도 캐시한다:
+MQTT로 받은 기기 상태도 캐시한다:
 
 ```dart
-// domain/ports/boiler_snapshot_cache.dart
-abstract class BoilerSnapshotCache {
-  void save(String deviceId, BoilerStatus status);
-  BoilerStatus? load(String deviceId);
+// domain/ports/iot_device_snapshot_cache.dart
+abstract class IoT DeviceSnapshotCache {
+  void save(String deviceId, IoT DeviceStatus status);
+  IoT DeviceStatus? load(String deviceId);
 }
 
 // 구현
-class BoilerSnapshotCacheImpl implements BoilerSnapshotCache {
-  final Map<String, BoilerStatus> _cache = {};
+class IoT DeviceSnapshotCacheImpl implements IoT DeviceSnapshotCache {
+  final Map<String, IoT DeviceStatus> _cache = {};
   final GetStorage _storage = GetStorage();
 
   @override
-  void save(String deviceId, BoilerStatus status) {
+  void save(String deviceId, IoT DeviceStatus status) {
     _cache[deviceId] = status;
     // 앱 재시작 대비 영구 저장
     _storage.write('snapshot_$deviceId', status.toJson());
   }
 
   @override
-  BoilerStatus? load(String deviceId) {
+  IoT DeviceStatus? load(String deviceId) {
     // 메모리 캐시 먼저
     if (_cache.containsKey(deviceId)) return _cache[deviceId];
     
@@ -144,7 +144,7 @@ class BoilerSnapshotCacheImpl implements BoilerSnapshotCache {
     final json = _storage.read<Map>('snapshot_$deviceId');
     if (json == null) return null;
     
-    return BoilerStatus.fromJson(Map<String, dynamic>.from(json));
+    return IoT DeviceStatus.fromJson(Map<String, dynamic>.from(json));
   }
 }
 ```
@@ -174,4 +174,4 @@ Obx(() {
 
 ---
 
-다음 편부터는 UI/UX 파트다. 보일러 제어 화면 구현부터 시작한다.
+다음 편부터는 UI/UX 파트다. 기기 제어 화면 구현부터 시작한다.

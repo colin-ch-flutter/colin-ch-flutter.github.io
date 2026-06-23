@@ -55,7 +55,7 @@ class NotificationSettingsView extends GetView<NotificationSettingsController> {
             _SectionHeader(title: '기기 알림'),
             _NotificationTile(
               title: '기기 오류',
-              subtitle: '보일러에 오류가 발생하면 알림을 받습니다',
+              subtitle: 'IoT 기기에 오류가 발생하면 알림을 받습니다',
               icon: Icons.error_outline,
               isEnabled: controller.isEnabled(NotificationType.deviceError),
               onChanged: (v) => controller.setEnabled(NotificationType.deviceError, v),

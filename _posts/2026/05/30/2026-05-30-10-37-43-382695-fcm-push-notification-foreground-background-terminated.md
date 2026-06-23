@@ -107,12 +107,12 @@ class PushNotificationService {
     final notificationType = message.data['type'];
     
     switch (notificationType) {
-      case 'boiler_alert':
+      case 'iot_device_alert':
         final deviceId = message.data['deviceId'];
-        Get.toNamed(Routes.boilerControl, arguments: {'deviceId': deviceId});
+        Get.toNamed(Routes.iot_deviceControl, arguments: {'deviceId': deviceId});
         break;
       case 'fota_available':
-        Get.toNamed(Routes.boilerScadaFota);
+        Get.toNamed(Routes.iot_deviceScadaFota);
         break;
       default:
         Get.toNamed(Routes.notificationList);
@@ -136,8 +136,8 @@ void _showLocalNotification(RemoteMessage message) {
     notification.body,
     NotificationDetails(
       android: AndroidNotificationDetails(
-        'boiler_alerts',
-        '보일러 알림',
+        'iot_device_alerts',
+        'IoT 기기 알림',
         importance: Importance.high,
         priority: Priority.high,
       ),
@@ -163,9 +163,9 @@ await _localNotifications
         AndroidFlutterLocalNotificationsPlugin>()
     ?.createNotificationChannel(
   const AndroidNotificationChannel(
-    'boiler_alerts',
-    '보일러 알림',
-    description: '보일러 기기 관련 알림',
+    'iot_device_alerts',
+    'IoT 기기 알림',
+    description: 'IoT 기기 기기 관련 알림',
     importance: Importance.high,
   ),
 );

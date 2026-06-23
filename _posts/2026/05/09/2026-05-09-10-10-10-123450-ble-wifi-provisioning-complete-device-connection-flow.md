@@ -14,11 +14,11 @@ share: true
 
 ## 전체 기기 등록 UX 흐름
 
-사용자가 새 보일러를 앱에 등록하는 과정을 UI 흐름으로 그려보면:
+사용자가 새 IoT 기기를 앱에 등록하는 과정을 UI 흐름으로 그려보면:
 
 ```
 1. 기기 추가 버튼 클릭
-2. 기기 준비 안내 화면 (보일러 전원 확인 등)
+2. 기기 준비 안내 화면 (IoT 기기 전원 확인 등)
 3. BLE 스캔 화면 (주변 기기 목록 표시)
 4. 기기 선택
 5. WiFi SSID/비밀번호 입력
@@ -86,7 +86,7 @@ class BlufiBleClient {
 
 ## 결과 대기와 타임아웃
 
-WiFi 연결 결과를 기다리는 부분이 중요하다. 보일러가 WiFi에 연결되는 데 시간이 걸리는데, 이 동안 앱은 기다려야 한다:
+WiFi 연결 결과를 기다리는 부분이 중요하다. IoT 기기가 WiFi에 연결되는 데 시간이 걸리는데, 이 동안 앱은 기다려야 한다:
 
 ```dart
 Future<BlufiResult> waitForResult({
@@ -126,7 +126,7 @@ enum WifiConnectResult {
 String getErrorMessage(WifiConnectResult result) {
   return switch (result) {
     WifiConnectResult.passwordWrong => 'WiFi 비밀번호가 맞지 않습니다',
-    WifiConnectResult.apNotFound => 'WiFi 신호를 찾을 수 없습니다. 보일러 주변에서 시도해보세요',
+    WifiConnectResult.apNotFound => 'WiFi 신호를 찾을 수 없습니다. IoT 기기 주변에서 시도해보세요',
     WifiConnectResult.timeout => '연결 시간이 초과되었습니다',
     _ => '연결에 실패했습니다. 다시 시도해주세요',
   };

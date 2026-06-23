@@ -3,7 +3,7 @@ layout: post
 title: "EMS(에너지 관리 시스템) 화면 구현"
 description: " "
 date: 2026-06-09
-tags: [Flutter, EMS, 에너지관리, fl_chart, SCADA]
+tags: [Flutter, EMS, 에너지관리, fl_chart, IoT 모니터링 대시보드]
 comments: true
 share: true
 ---
@@ -14,9 +14,9 @@ share: true
 
 ## EMS가 뭔가
 
-EMS(Energy Management System)는 에너지 사용량을 모니터링하고 효율을 관리하는 시스템이다. 상업용 보일러를 운영하는 건물 관리자나 시설 담당자에게 중요한 기능이다.
+EMS(Energy Management System)는 에너지 사용량을 모니터링하고 효율을 관리하는 시스템이다. 상업용 IoT 기기를 운영하는 건물 관리자나 시설 담당자에게 중요한 기능이다.
 
-SCADA 보일러의 EMS 화면에서 제공하는 정보:
+IoT 모니터링 대시보드 IoT 기기의 EMS 화면에서 제공하는 정보:
 - 실시간 가스 소비량
 - 실시간 전력 소비량
 - 시간별 / 일별 / 월별 에너지 트렌드
@@ -26,7 +26,7 @@ SCADA 보일러의 EMS 화면에서 제공하는 정보:
 ## EMS Controller
 
 ```dart
-class BoilerScadaEmsController extends GetxController {
+class IoT DeviceScadaEmsController extends GetxController {
   final String deviceId;
   
   final Rx<EmsData?> currentData = Rx(null);
@@ -73,8 +73,8 @@ class BoilerScadaEmsController extends GetxController {
 ## EMS View 구현
 
 ```dart
-class BoilerScadaEmsView extends GetView<BoilerScadaEmsController> {
-  const BoilerScadaEmsView({super.key});
+class IoT DeviceScadaEmsView extends GetView<IoT DeviceScadaEmsController> {
+  const IoT DeviceScadaEmsView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -235,4 +235,4 @@ class _EmsChart extends StatelessWidget {
 
 ---
 
-다음 편은 SCADA 히스토리 데이터 조회와 페이징 처리다.
+다음 편은 IoT 모니터링 대시보드 히스토리 데이터 조회와 페이징 처리다.

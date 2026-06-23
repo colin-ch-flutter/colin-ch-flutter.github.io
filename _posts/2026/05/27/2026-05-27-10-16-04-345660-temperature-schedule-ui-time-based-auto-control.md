@@ -3,7 +3,7 @@ layout: post
 title: "온도 스케줄 설정 UI - 시간대별 온도 자동 조절"
 description: " "
 date: 2026-05-27
-tags: [Flutter, UI, 스케줄, 예약, 보일러]
+tags: [Flutter, UI, 스케줄, 예약, IoT 기기]
 comments: true
 share: true
 ---
@@ -14,24 +14,24 @@ share: true
 
 ## 스케줄 기능의 실제 가치
 
-보일러 스케줄은 생각보다 자주 쓰이는 기능이다. 매일 오전 7시에 난방을 켜두면 출근 준비할 때 집이 따뜻하고, 퇴근 전 30분에 미리 예열하면 집에 도착했을 때 이미 따뜻하다.
+IoT 기기 스케줄은 생각보다 자주 쓰이는 기능이다. 매일 오전 7시에 난방을 켜두면 출근 준비할 때 집이 따뜻하고, 퇴근 전 30분에 미리 예열하면 집에 도착했을 때 이미 따뜻하다.
 
 이런 시나리오를 지원하는 스케줄 UI를 구현했다.
 
 ## 스케줄 데이터 구조
 
 ```dart
-// domain/models/boiler_schedule.dart
-class BoilerSchedule {
+// domain/models/iot_device_schedule.dart
+class IoT DeviceSchedule {
   final String id;
   final String deviceId;
   final int targetTemp;
   final TimeOfDay startTime;
   final List<bool> repeatDays; // 월~일 7개
   final bool isEnabled;
-  final BoilerMode mode;
+  final IoT DeviceMode mode;
 
-  const BoilerSchedule({
+  const IoT DeviceSchedule({
     required this.id,
     required this.deviceId,
     required this.targetTemp,
@@ -46,7 +46,7 @@ class BoilerSchedule {
 ## 스케줄 목록 화면
 
 ```dart
-class BoilerScheduleView extends GetView<BoilerScheduleController> {
+class IoT DeviceScheduleView extends GetView<IoT DeviceScheduleController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,7 +55,7 @@ class BoilerScheduleView extends GetView<BoilerScheduleController> {
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
-            onPressed: () => Get.toNamed(Routes.boilerAddSchedule),
+            onPressed: () => Get.toNamed(Routes.iot_deviceAddSchedule),
           ),
         ],
       ),
@@ -74,7 +74,7 @@ class BoilerScheduleView extends GetView<BoilerScheduleController> {
               onToggle: controller.toggleSchedule,
               onDelete: controller.deleteSchedule,
               onTap: () => Get.toNamed(
-                Routes.boilerAddSchedule,
+                Routes.iot_deviceAddSchedule,
                 arguments: schedules[index],
               ),
             );
@@ -89,7 +89,7 @@ class BoilerScheduleView extends GetView<BoilerScheduleController> {
 ## 스케줄 추가 화면
 
 ```dart
-class BoilerAddScheduleView extends GetView<BoilerAddScheduleController> {
+class IoT DeviceAddScheduleView extends GetView<IoT DeviceAddScheduleController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -179,7 +179,7 @@ class _DaySelector extends StatelessWidget {
 ## 스케줄 표시 포맷
 
 ```dart
-String formatSchedule(BoilerSchedule schedule) {
+String formatSchedule(IoT DeviceSchedule schedule) {
   final time = schedule.startTime;
   final timeStr = '${time.hour.toString().padLeft(2, '0')}:${time.minute.toString().padLeft(2, '0')}';
   

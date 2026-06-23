@@ -29,8 +29,8 @@ Domain 레이어에 인터페이스만 정의한다:
 ```dart
 // domain/repositories/api_repository.dart
 abstract class ApiRepository {
-  Future<ApiResult<List<BoilerDevice>>> getDevices(String spaceId);
-  Future<ApiResult<BoilerDevice>> addDevice(AddDeviceRequest request);
+  Future<ApiResult<List<IoT DeviceDevice>>> getDevices(String spaceId);
+  Future<ApiResult<IoT DeviceDevice>> addDevice(AddDeviceRequest request);
   Future<ApiResult<void>> deleteDevice(String deviceId);
   Future<ApiResult<void>> updateDeviceNickname(String deviceId, String nickname);
 }
@@ -66,11 +66,11 @@ class ApiRepositoryImpl implements ApiRepository {
   ApiRepositoryImpl(this._apiService);
 
   @override
-  Future<ApiResult<List<BoilerDevice>>> getDevices(String spaceId) async {
+  Future<ApiResult<List<IoT DeviceDevice>>> getDevices(String spaceId) async {
     try {
       final response = await _apiService.get('/spaces/$spaceId/devices');
       final devices = (response.data as List)
-          .map((json) => BoilerDeviceApiMapper.fromJson(json))
+          .map((json) => IoT DeviceDeviceApiMapper.fromJson(json))
           .toList();
       return ApiSuccess(devices);
     } on ApiException catch (e) {
@@ -88,7 +88,7 @@ class ApiRepositoryImpl implements ApiRepository {
 class DeviceManagementController extends GetxController {
   final ApiRepository _apiRepo;
   
-  final RxList<BoilerDevice> devices = <BoilerDevice>[].obs;
+  final RxList<IoT DeviceDevice> devices = <IoT DeviceDevice>[].obs;
   final RxBool isLoading = false.obs;
   final RxString errorMessage = ''.obs;
 
@@ -133,8 +133,8 @@ class InitialBinding extends Bindings {
       () => ApiRepositoryImpl(Get.find()),
       fenix: true,
     );
-    Get.lazyPut<BoilerMqttRepository>(
-      () => BoilerMqttRepositoryImpl(Get.find()),
+    Get.lazyPut<IoT DeviceMqttRepository>(
+      () => IoT DeviceMqttRepositoryImpl(Get.find()),
       fenix: true,
     );
     Get.lazyPut<DbRepository>(

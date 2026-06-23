@@ -31,10 +31,10 @@ share: true
 8. 앱이 완료 확인
 ```
 
-## BoilerScadaFotaView - 업데이트 목록
+## IoT DeviceScadaFotaView - 업데이트 목록
 
 ```dart
-class BoilerScadaFotaController extends GetxController {
+class IoT DeviceScadaFotaController extends GetxController {
   final String deviceId;
   
   final Rx<FotaStatus?> fotaStatus = Rx(null);
@@ -75,7 +75,7 @@ class BoilerScadaFotaController extends GetxController {
     
     if (confirmed != true) return;
     
-    Get.toNamed(Routes.boilerScadaDetailFota, arguments: {
+    Get.toNamed(Routes.iot_deviceScadaDetailFota, arguments: {
       'deviceId': deviceId,
       'fotaId': fotaId,
     });
@@ -83,10 +83,10 @@ class BoilerScadaFotaController extends GetxController {
 }
 ```
 
-## BoilerScadaDetailFotaView - 업데이트 진행 화면
+## IoT DeviceScadaDetailFotaView - 업데이트 진행 화면
 
 ```dart
-class BoilerScadaDetailFotaController extends GetxController {
+class IoT DeviceScadaDetailFotaController extends GetxController {
   final String deviceId;
   final String fotaId;
   

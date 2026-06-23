@@ -3,7 +3,7 @@ layout: post
 title: "히스토리 데이터 조회 - 페이징과 날짜 필터링"
 description: " "
 date: 2026-06-10
-tags: [Flutter, 페이징, 히스토리, SCADA, 무한스크롤]
+tags: [Flutter, 페이징, 히스토리, IoT 모니터링 대시보드, 무한스크롤]
 comments: true
 share: true
 ---
@@ -14,7 +14,7 @@ share: true
 
 ## 히스토리 기능 요구사항
 
-SCADA 보일러의 운전 이력을 조회하는 화면이다:
+IoT 모니터링 대시보드 IoT 기기의 운전 이력을 조회하는 화면이다:
 - 날짜 범위 필터 (오늘, 최근 7일, 최근 30일, 직접 선택)
 - 무한 스크롤 (페이징)
 - 각 항목: 시간, 이벤트 타입, 상세 내용
@@ -30,7 +30,7 @@ enum HistoryDateRange {
   custom,
 }
 
-class BoilerScadaHistoryController extends GetxController {
+class IoT DeviceScadaHistoryController extends GetxController {
   final Rx<HistoryDateRange> selectedRange = HistoryDateRange.today.obs;
   final Rx<DateTime> customStart = DateTime.now().obs;
   final Rx<DateTime> customEnd = DateTime.now().obs;
@@ -114,7 +114,7 @@ class BoilerScadaHistoryController extends GetxController {
 `ScrollController`로 스크롤 끝 감지:
 
 ```dart
-class BoilerScadaHistoryView extends GetView<BoilerScadaHistoryController> {
+class IoT DeviceScadaHistoryView extends GetView<IoT DeviceScadaHistoryController> {
   final ScrollController _scrollController = ScrollController();
 
   @override

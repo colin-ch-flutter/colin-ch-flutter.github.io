@@ -23,7 +23,7 @@ Flutter에서 로컬 데이터를 저장하는 방법은 여러 가지다:
 | Hive | 빠름, 타입 안전 | 관계형 데이터 처리 약함 |
 | Realm | 객체 지향, 빠름, 관계 지원 | 파일 크기가 큼 |
 
-보일러 기기 정보, 사용자 설정, 스케줄 등 서로 관계가 있는 데이터가 많아서 Realm을 선택했다. Realm은 객체를 그대로 저장하고 조회할 수 있어서 Flutter 코드와 자연스럽게 맞는다.
+IoT 기기 기기 정보, 사용자 설정, 스케줄 등 서로 관계가 있는 데이터가 많아서 Realm을 선택했다. Realm은 객체를 그대로 저장하고 조회할 수 있어서 Flutter 코드와 자연스럽게 맞는다.
 
 ## Realm 설정
 
@@ -41,11 +41,11 @@ dev_dependencies:
 `RealmModel`로 데이터 모델을 정의한다:
 
 ```dart
-// data/models/db/boiler_device_realm.dart
-part 'boiler_device_realm.realm.dart';
+// data/models/db/iot_device_device_realm.dart
+part 'iot_device_device_realm.realm.dart';
 
 @RealmModel()
-class _BoilerDeviceRealm {
+class _IoT DeviceDeviceRealm {
   @PrimaryKey()
   late String id;
   
@@ -65,7 +65,7 @@ class _BoilerDeviceRealm {
 flutter pub run build_runner build
 ```
 
-생성된 `boiler_device_realm.realm.dart`에 실제 Realm 클래스가 만들어진다.
+생성된 `iot_device_device_realm.realm.dart`에 실제 Realm 클래스가 만들어진다.
 
 ## CRUD 구현
 
@@ -76,7 +76,7 @@ class DbService {
   
   Future<void> init() async {
     final config = Configuration.local(
-      [BoilerDeviceRealm.schema, UserSettingsRealm.schema],
+      [IoT DeviceDeviceRealm.schema, UserSettingsRealm.schema],
       schemaVersion: 1,
       migrationCallback: _onMigration,
     );
@@ -84,8 +84,8 @@ class DbService {
   }
   
   // 저장
-  Future<void> saveDevice(BoilerDevice device) async {
-    final realmObj = BoilerDeviceRealm(
+  Future<void> saveDevice(IoT DeviceDevice device) async {
+    final realmObj = IoT DeviceDeviceRealm(
       device.id,
       device.nickname,
       device.modelName,
@@ -96,23 +96,23 @@ class DbService {
   }
   
   // 조회
-  BoilerDevice? getDevice(String deviceId) {
-    final obj = _realm.find<BoilerDeviceRealm>(deviceId);
+  IoT DeviceDevice? getDevice(String deviceId) {
+    final obj = _realm.find<IoT DeviceDeviceRealm>(deviceId);
     if (obj == null) return null;
-    return BoilerDeviceMapper.fromRealm(obj);
+    return IoT DeviceDeviceMapper.fromRealm(obj);
   }
   
   // 목록 조회
-  List<BoilerDevice> getDevicesBySpace(String spaceId) {
+  List<IoT DeviceDevice> getDevicesBySpace(String spaceId) {
     return _realm
-        .query<BoilerDeviceRealm>('spaceId == \$0', [spaceId])
-        .map(BoilerDeviceMapper.fromRealm)
+        .query<IoT DeviceDeviceRealm>('spaceId == \$0', [spaceId])
+        .map(IoT DeviceDeviceMapper.fromRealm)
         .toList();
   }
   
   // 삭제
   Future<void> deleteDevice(String deviceId) async {
-    final obj = _realm.find<BoilerDeviceRealm>(deviceId);
+    final obj = _realm.find<IoT DeviceDeviceRealm>(deviceId);
     if (obj != null) {
       _realm.write(() => _realm.delete(obj));
     }
@@ -133,7 +133,7 @@ const config = Configuration.local(
       // 버전 1 → 2 마이그레이션
       // 예: 새 컬럼 추가 (기본값 설정)
       migration.newRealm
-          .query<BoilerDeviceRealm>('TRUEPREDICATE')
+          .query<IoT DeviceDeviceRealm>('TRUEPREDICATE')
           .forEach((obj) {
         obj.newField = 'default_value';
       });

@@ -1,20 +1,20 @@
 ---
 layout: post
-title: "GetX Controller로 보일러 제어 화면 구현하기"
+title: "GetX Controller로 기기 제어 화면 구현하기"
 description: " "
 date: 2026-05-23
-tags: [Flutter, GetX, UI, 보일러제어, IoT]
+tags: [Flutter, GetX, UI, IoT 기기제어, IoT]
 comments: true
 share: true
 ---
 
-# GetX Controller로 보일러 제어 화면 구현하기
+# GetX Controller로 기기 제어 화면 구현하기
 
 ![스마트홈 컨트롤](https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80)
 
 ## 제어 화면의 요구사항
 
-보일러 제어 화면은 IoT 앱의 핵심이다. 요구사항을 정리하면:
+기기 제어 화면은 IoT 앱의 핵심이다. 요구사항을 정리하면:
 
 - 현재 온도 / 설정 온도 표시
 - 전원 On/Off 버튼
@@ -26,37 +26,37 @@ share: true
 ## Controller 구현
 
 ```dart
-class BoilerControlController extends GetxController {
+class IoT DeviceControlController extends GetxController {
   final String deviceId;
-  final BoilerMqttRepository _mqttRepo;
+  final IoT DeviceMqttRepository _mqttRepo;
   final AppCache _cache;
 
-  BoilerControlController({
+  IoT DeviceControlController({
     required this.deviceId,
-    required BoilerMqttRepository mqttRepo,
+    required IoT DeviceMqttRepository mqttRepo,
     required AppCache cache,
   })  : _mqttRepo = mqttRepo,
         _cache = cache;
 
   // 상태 변수
-  final Rx<BoilerStatus?> status = Rx(null);
+  final Rx<IoT DeviceStatus?> status = Rx(null);
   final RxBool isCommandPending = false.obs;
 
   @override
   void onInit() {
     super.onInit();
     // 캐시된 상태로 초기값 설정
-    status.value = _cache.loadBoilerStatus(deviceId);
+    status.value = _cache.loadIoT DeviceStatus(deviceId);
     // MQTT 스트림 구독
     _mqttRepo.statusStream
         .where((s) => s.deviceId == deviceId)
         .listen(_onStatusUpdated);
   }
 
-  void _onStatusUpdated(BoilerStatus newStatus) {
+  void _onStatusUpdated(IoT DeviceStatus newStatus) {
     status.value = newStatus;
     isCommandPending.value = false;
-    _cache.saveBoilerStatus(deviceId, newStatus);
+    _cache.saveIoT DeviceStatus(deviceId, newStatus);
   }
 
   Future<void> togglePower() async {
@@ -96,7 +96,7 @@ class BoilerControlController extends GetxController {
     );
   }
 
-  Future<void> changeMode(BoilerMode mode) async {
+  Future<void> changeMode(IoT DeviceMode mode) async {
     isCommandPending.value = true;
     await _mqttRepo.publishModeControl(deviceId, mode);
   }
@@ -106,13 +106,13 @@ class BoilerControlController extends GetxController {
 ## View 구현
 
 ```dart
-class BoilerControlView extends GetView<BoilerControlController> {
-  const BoilerControlView({super.key});
+class IoT DeviceControlView extends GetView<IoT DeviceControlController> {
+  const IoT DeviceControlView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('보일러 제어')),
+      appBar: AppBar(title: const Text('IoT 기기 제어')),
       body: Obx(() {
         final status = controller.status.value;
         final isPending = controller.isCommandPending.value;
@@ -163,7 +163,7 @@ class BoilerControlView extends GetView<BoilerControlController> {
 
 ```dart
 class _TemperatureDisplay extends StatelessWidget {
-  final BoilerStatus status;
+  final IoT DeviceStatus status;
 
   const _TemperatureDisplay({required this.status});
 

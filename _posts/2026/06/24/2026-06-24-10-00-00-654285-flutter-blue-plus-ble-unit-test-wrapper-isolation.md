@@ -249,7 +249,7 @@ List<ScanResult> _makeFakeScanResults(List<String> ids) {
 
 해결 방법은 두 가지다.
 
-**방법 1**: `flutter_blue_plus`의 공식 Mocking 채널을 쓰는 것. 패키지 내부 MethodChannel에 fake 응답을 주입해서 `ScanResult`를 직렬화된 형태로 만든다. 정확하지만 boilerplate가 많다.
+**방법 1**: `flutter_blue_plus`의 공식 Mocking 채널을 쓰는 것. 패키지 내부 MethodChannel에 fake 응답을 주입해서 `ScanResult`를 직렬화된 형태로 만든다. 정확하지만 iot_deviceplate가 많다.
 
 **방법 2**: `scanResults`를 Controller에서 `List<ScanResult>`로 가공하지 않고, Wrapper에서 이미 내부 데이터 모델(`BleDevice`)로 변환해서 넘긴다. Controller는 `BleDevice`만 다루면 되니까 `ScanResult` 생성 문제 자체가 없어진다.
 
