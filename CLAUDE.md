@@ -9,7 +9,7 @@
 | 항목 | 값 |
 |------|----|
 | 사이트 URL | https://colin-ch-flutter.github.io |
-| 저자 | Colin Flutter |
+| 저자 | Colin Flutter IoT |
 | 언어 | 한국어 (주), 영어 (레거시) |
 | 주제 | Flutter 앱 개발 실전 — IoT, 스마트홈, BLE, MQTT |
 | Jekyll 설정 | `_config.yml` 참조 |
@@ -119,10 +119,13 @@ UX, 회고
 |------|-----------|------|
 | 기초 패턴 | Fake Repository, Controller Unit Test | 2 |
 | BLE 격리 | flutter_blue_plus Wrapper 패턴, FakeBleService | 1 |
-| 예정 | mqtt5_client MQTT 연결 로직 테스트 | - |
+| MQTT 격리 | mqtt5_client Fake 서비스로 연결 로직 테스트 | 1 |
+| CI 자동화 | GitHub Actions, flutter test --coverage, lcov | 1 |
+| Widget Test | IoT 제어 화면 WidgetTester, FakeController, pump vs pumpAndSettle | 1 |
+| Widget Test + CI | Unit·Widget 커버리지 합산, lcov merge, Codecov 뱃지 | 1 |
 
-마지막 포스트: `_posts/2026/06/24/2026-06-24-10-00-00-654285-flutter-blue-plus-ble-unit-test-wrapper-isolation.md`  
-다음 일련번호: `666630`
+마지막 포스트: `_posts/2026/06/25/2026-06-25-14-00-00-703665-flutter-widget-test-ci-coverage-merge.md`  
+다음 일련번호: `716010`
 
 ---
 
