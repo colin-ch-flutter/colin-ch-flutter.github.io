@@ -7,9 +7,6 @@ tags: [Flutter, 앱배포, GooglePlay, AppStore, 앱심사]
 comments: true
 share: true
 ---
-
-# Android & iOS 앱 스토어 배포 준비 - 아이콘부터 심사까지
-
 ![앱 배포](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80)
 
 ## 앱 아이콘 생성

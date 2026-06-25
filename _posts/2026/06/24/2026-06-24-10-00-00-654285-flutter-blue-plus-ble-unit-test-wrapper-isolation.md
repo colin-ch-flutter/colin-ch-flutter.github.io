@@ -7,9 +7,6 @@ tags: [Flutter, UnitTest, BLE, flutter_blue_plus, Dart]
 comments: true
 share: true
 ---
-
-# flutter_blue_plus Unit Test - static 메서드를 Wrapper로 격리하는 법
-
 ![코드와 블루투스 연결](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80)
 
 [이전 편에서 GetX Controller의 비동기 다이얼로그 테스트를 콜백 주입으로 해결했다.]({% post_url 2026-06-23-11-07-13-641940-flutter-getx-test-async-dialog-confirm %}) 이번엔 다른 종류의 벽을 만났다. `flutter_blue_plus`의 `FlutterBluePlus` 클래스가 static 메서드만 있어서, Mockito로 Mock 객체를 만들 수가 없다.

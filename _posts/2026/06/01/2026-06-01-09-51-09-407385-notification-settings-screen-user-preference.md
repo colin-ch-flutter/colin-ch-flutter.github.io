@@ -7,9 +7,6 @@ tags: [Flutter, 알림설정, UX, FCM, 푸시알림]
 comments: true
 share: true
 ---
-
-# 알림 설정 화면 - 사용자가 원하는 알림만 받기
-
 ![알림 설정](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80)
 
 ## 알림이 너무 많으면 오히려 방해가 된다

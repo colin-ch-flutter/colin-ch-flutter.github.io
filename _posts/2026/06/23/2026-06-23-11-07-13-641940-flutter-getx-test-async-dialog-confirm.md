@@ -7,9 +7,6 @@ tags: [Flutter, UnitTest, GetX, CleanArchitecture, Dart]
 comments: true
 share: true
 ---
-
-# Flutter GetX Controller 테스트 - 비동기 다이얼로그 처리하는 법
-
 ![코드 테스트](https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80)
 
 [이전 편에서 Fake Repository를 만들고 Controller 기본 테스트를 잡았다.]({% post_url 2026-06-23-10-00-00-629595-flutter-unit-test-repository-layer-start %}) 거기서 끝에 예고한 대로, MemberManagementController를 테스트하다가 막혔다. 멤버 삭제 버튼 → 확인 다이얼로그 → "확인" 탭 → API 호출. 이 흐름을 Unit Test에서 어떻게 재현하나.

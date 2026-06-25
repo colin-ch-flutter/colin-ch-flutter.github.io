@@ -7,9 +7,6 @@ tags: [Flutter, permission_handler, 권한, UX, Android, iOS]
 comments: true
 share: true
 ---
-
-# permission_handler로 권한 요청 UX 개선하기
-
 ![앱 권한](https://images.unsplash.com/photo-1589254065878-42c9da997008?w=800&q=80)
 
 ## IoT 앱에 필요한 권한들

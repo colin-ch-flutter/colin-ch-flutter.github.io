@@ -7,9 +7,6 @@ tags: [Flutter, LocalNotification, 알림, flutter_local_notifications]
 comments: true
 share: true
 ---
-
-# flutter_local_notifications로 로컬 알림 구현
-
 ![알림 화면](https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800&q=80)
 
 ## 로컬 알림이 필요한 경우

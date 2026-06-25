@@ -7,9 +7,6 @@ tags: [Flutter, QR코드, mobile_scanner, IoT, 기기등록]
 comments: true
 share: true
 ---
-
-# QR 코드로 IoT 기기 등록하기 - mobile_scanner 완벽 활용
-
 ![QR 스캔](https://images.unsplash.com/photo-1567446537708-ac4aa75c9c28?w=800&q=80)
 
 ## QR 방식이 BLE보다 나은 경우

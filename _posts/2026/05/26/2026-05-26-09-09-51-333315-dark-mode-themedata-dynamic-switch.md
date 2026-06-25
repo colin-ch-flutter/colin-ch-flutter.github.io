@@ -7,9 +7,6 @@ tags: [Flutter, 다크모드, ThemeData, UI, 테마]
 comments: true
 share: true
 ---
-
-# 다크모드 완벽 지원 - ThemeData 설계와 동적 전환
-
 ![다크 테마 UI](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80)
 
 ## ThemeData 구조 설계

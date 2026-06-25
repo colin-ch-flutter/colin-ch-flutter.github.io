@@ -7,9 +7,6 @@ tags: [Flutter, GetX, UI, IoT 기기제어, IoT]
 comments: true
 share: true
 ---
-
-# GetX Controller로 기기 제어 화면 구현하기
-
 ![스마트홈 컨트롤](https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80)
 
 ## 제어 화면의 요구사항

@@ -7,9 +7,6 @@ tags: [Flutter, Lottie, 애니메이션, UX]
 comments: true
 share: true
 ---
-
-# Lottie 애니메이션으로 앱에 생동감 불어넣기
-
 ![애니메이션 디자인](https://images.unsplash.com/photo-1626785774625-0b1c2c4eab67?w=800&q=80)
 
 ## Lottie가 뭔가

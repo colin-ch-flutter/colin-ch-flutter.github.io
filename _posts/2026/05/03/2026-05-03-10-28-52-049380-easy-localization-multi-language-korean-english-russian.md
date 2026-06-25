@@ -7,9 +7,6 @@ tags: [Flutter, i18n, easy_localization, 다국어]
 comments: true
 share: true
 ---
-
-# Easy Localization으로 3개 국어 지원하기 (한국어/영어/외국어)
-
 ![세계 언어](https://images.unsplash.com/photo-1526378800651-2e3b8c7cb34b?w=800&q=80)
 
 ## 다국어 지원이 필수인 이유

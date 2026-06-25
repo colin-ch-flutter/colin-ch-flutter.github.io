@@ -7,9 +7,6 @@ tags: [Flutter, UnitTest, MQTT, mqtt5_client, Dart]
 comments: true
 share: true
 ---
-
-# mqtt5_client Unit Test - Fake 서비스로 MQTT 연결 로직 격리하기
-
 ![서버와 네트워크 연결 테스트](https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80)
 
 [이전 편에서 flutter_blue_plus의 static 메서드를 Wrapper로 격리했다.]({% post_url 2026-06-24-10-00-00-654285-flutter-blue-plus-ble-unit-test-wrapper-isolation %}) MQTT도 비슷한 벽이 있다. `mqtt5_client`의 `MqttClient`는 생성자에 host와 port를 바로 받는다. 추상 계층 없이 테스트에서 교체할 방법이 없다.

@@ -7,9 +7,6 @@ tags: [Flutter, UI, 스케줄, 예약, IoT 기기]
 comments: true
 share: true
 ---
-
-# 온도 스케줄 설정 UI - 시간대별 온도 자동 조절
-
 ![일정 캘린더](https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=800&q=80)
 
 ## 스케줄 기능의 실제 가치

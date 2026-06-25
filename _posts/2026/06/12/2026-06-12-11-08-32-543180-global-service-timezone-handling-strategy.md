@@ -7,9 +7,6 @@ tags: [Flutter, 타임존, timezone, 글로벌, IoT]
 comments: true
 share: true
 ---
-
-# 글로벌 서비스를 위한 타임존 처리 전략
-
 ![세계 타임존](https://images.unsplash.com/photo-1526378800651-2e3b8c7cb34b?w=800&q=80)
 
 ## 타임존이 왜 중요한가

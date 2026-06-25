@@ -7,9 +7,6 @@ tags: [Flutter, IoT 모니터링 대시보드, UI, IoT 기기제어, GetX]
 comments: true
 share: true
 ---
-
-# IoT 모니터링 대시보드 기기 제어 화면 구현
-
 ![IoT 기기 제어](https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80)
 
 ## IoT 모니터링 대시보드 제어 화면의 복잡도

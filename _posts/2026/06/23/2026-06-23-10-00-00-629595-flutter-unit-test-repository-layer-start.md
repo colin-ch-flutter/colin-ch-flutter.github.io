@@ -7,9 +7,6 @@ tags: [Flutter, UnitTest, GetX, CleanArchitecture, Repository패턴]
 comments: true
 share: true
 ---
-
-# Flutter Unit Test 시작하기 - Repository 레이어부터 짜는 이유
-
 ![테스트 코드](https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80)
 
 [50일 회고]({% post_url 2026-06-18-11-50-50-617250-50-days-flutter-iot-app-retrospective-smarthome %})에서 솔직하게 털어놨다. "이번 프로젝트에서 Unit Test를 충분히 못 썼다." 쓰고 나서 찜찜했는데, 그냥 찜찜함으로 끝내기엔 너무 명확한 숙제였다. 지금부터 시작한다.

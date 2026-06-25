@@ -7,9 +7,6 @@ tags: [Flutter, CI/CD, GitHub Actions, UnitTest, Dart]
 comments: true
 share: true
 ---
-
-# Flutter Widget Test CI 통합 — Unit·Widget 커버리지 합산 GitHub Actions
-
 ![GitHub Actions CI 자동화 파이프라인](https://images.unsplash.com/photo-1607706189992-eae578626c86?w=800&q=80)
 
 [이전 글에서 Widget Test를 작성했다.]({% post_url 2026-06-25-10-00-00-691320-flutter-widget-test-iot-control-screen %}) 로컬에서 돌리면 잘 된다. 근데 CI에 안 올리면 반쪽짜리다. PR 올릴 때 Widget Test가 자동으로 돌고, Unit Test와 커버리지가 합산돼서 하나의 숫자로 나와야 진짜다.

@@ -7,9 +7,6 @@ tags: [Flutter, Dart, GetX, CleanArchitecture, IoT]
 comments: true
 share: true
 ---
-
-# Flutter Widget Test — IoT 제어 화면 UI 테스트 실전
-
 ![Flutter Widget Test 화면 검증](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80)
 
 Unit Test는 어느 정도 정착이 됐는데, Widget Test는 손을 못 대고 있었다. Repository 레이어, GetX Controller 테스트는 [이전 글에서 다뤘지만]({% post_url 2026-06-23-10-00-00-629595-flutter-unit-test-repository-layer-start %}), 실제 버튼이 눌렸을 때 화면이 어떻게 바뀌는지까지 자동으로 검증하는 건 또 다른 문제다.

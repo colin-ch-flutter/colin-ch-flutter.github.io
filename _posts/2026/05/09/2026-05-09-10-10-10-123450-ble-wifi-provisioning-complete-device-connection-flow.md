@@ -7,9 +7,6 @@ tags: [Flutter, BLE, WiFi프로비저닝, BluFi, IoT]
 comments: true
 share: true
 ---
-
-# BLE WiFi 프로비저닝 완성 - 기기 연결 프로세스 전체 흐름
-
 ![네트워크 연결](https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80)
 
 ## 전체 기기 등록 UX 흐름

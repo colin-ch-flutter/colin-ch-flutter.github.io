@@ -7,9 +7,6 @@ tags: [Flutter, WakelockPlus, 화면유지, IoT, 모니터링]
 comments: true
 share: true
 ---
-
-# WakelockPlus로 IoT 모니터링 화면 켜진 채 유지하기
-
 ![스마트홈 모니터링](https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80)
 
 ## 왜 화면이 꺼지면 안 되는가

@@ -7,9 +7,6 @@ tags: [Flutter, MQTT, GetX, 실시간, 상태관리]
 comments: true
 share: true
 ---
-
-# MQTT 실시간 상태 수신과 UI 동기화
-
 ![실시간 대시보드](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80)
 
 ## 데이터 흐름 전체 그림

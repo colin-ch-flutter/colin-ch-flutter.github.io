@@ -7,9 +7,6 @@ tags: [Flutter, BLE, 재연결, 오류처리, flutter_blue_plus]
 comments: true
 share: true
 ---
-
-# BLE 연결 안정성 높이기 - 재연결과 오류 처리 전략
-
 ![회로 연결](https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80)
 
 ## BLE가 끊기는 상황들

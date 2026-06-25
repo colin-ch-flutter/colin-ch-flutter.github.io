@@ -7,9 +7,6 @@ tags: [Flutter, UnitTest, CI/CD, GitHub Actions, Dart]
 comments: true
 share: true
 ---
-
-# Flutter 단위 테스트 GitHub Actions CI 자동화 — 커밋마다 커버리지 측정하기
-
 ![터미널에서 실행되는 자동화 CI 파이프라인](https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800&q=80)
 
 지금까지 Repository 테스트, Controller 비동기 테스트, [BLE 격리]({% post_url 2026-06-24-10-00-00-654285-flutter-blue-plus-ble-unit-test-wrapper-isolation %}), [MQTT 격리]({% post_url 2026-06-24-14-00-00-666630-mqtt5-client-unit-test-fake-service-isolation %})까지 작성했다. 근데 문제가 있다. 로컬에서만 `flutter test`를 돌리면 팀원이 PR 올릴 때 테스트를 안 돌려도 아무도 모른다. 실제로 한 번은 BLE Wrapper를 리팩터하면서 테스트를 깨뜨렸는데, 머지 직전에야 알았다.

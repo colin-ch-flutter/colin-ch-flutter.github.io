@@ -7,9 +7,6 @@ tags: [Flutter, MQTT5, IoT 기기제어, IoT, Dart]
 comments: true
 share: true
 ---
-
-# mqtt5_client로 IoT 기기 On/Off 제어하기
-
 ![스마트홈 컨트롤](https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80)
 
 ## mqtt5_client vs mqtt_client

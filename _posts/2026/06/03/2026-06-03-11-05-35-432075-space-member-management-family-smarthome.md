@@ -7,9 +7,6 @@ tags: [Flutter, 공간관리, 멤버관리, 스마트홈, UX]
 comments: true
 share: true
 ---
-
-# 공간(Space)과 멤버 관리 - 가족이 함께 쓰는 스마트홈
-
 ![스마트홈 가족](https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80)
 
 ## 공간(Space) 개념

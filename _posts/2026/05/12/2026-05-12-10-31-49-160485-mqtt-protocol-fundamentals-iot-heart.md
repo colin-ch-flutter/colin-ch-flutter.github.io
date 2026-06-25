@@ -7,9 +7,6 @@ tags: [MQTT, IoT, 프로토콜, 메시징]
 comments: true
 share: true
 ---
-
-# IoT의 심장, MQTT 프로토콜 이해하기
-
 ![네트워크 통신](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80)
 
 ## MQTT가 뭔지부터

@@ -7,9 +7,6 @@ tags: [Flutter, BLE, BluFi, ESP32, WiFi프로비저닝]
 comments: true
 share: true
 ---
-
-# BluFi 프로토콜이란? - ESP32 기기에 WiFi 정보 전달하기
-
 ![WiFi 라우터](https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80)
 
 ## WiFi 프로비저닝이 왜 필요한가

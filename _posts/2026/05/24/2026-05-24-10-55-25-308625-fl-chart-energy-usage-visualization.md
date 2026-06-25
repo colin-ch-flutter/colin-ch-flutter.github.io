@@ -7,9 +7,6 @@ tags: [Flutter, fl_chart, 차트, 데이터시각화, IoT]
 comments: true
 share: true
 ---
-
-# fl_chart로 에너지 사용량 시각화하기
-
 ![데이터 차트](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80)
 
 ## fl_chart 선택 이유

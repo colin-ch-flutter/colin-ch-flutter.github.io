@@ -7,9 +7,6 @@ tags: [Flutter, GetX, 상태관리, 라우팅]
 comments: true
 share: true
 ---
-
-# GetX 완전 정복 - Flutter IoT 앱의 상태관리와 라우팅
-
 ![코드 에디터](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80)
 
 ## 왜 GetX를 선택했나

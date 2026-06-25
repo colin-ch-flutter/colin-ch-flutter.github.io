@@ -7,9 +7,6 @@ tags: [Flutter, FCM, 푸시알림, Firebase, 알림]
 comments: true
 share: true
 ---
-
-# FCM 푸시 알림 완전 정복 - 포그라운드/백그라운드/종료 상태 모두 처리
-
 ![푸시 알림](https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80)
 
 ## 앱 상태 세 가지를 모두 처리해야 한다

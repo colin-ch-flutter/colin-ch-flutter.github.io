@@ -7,9 +7,6 @@ tags: [Flutter, SecureStorage, 보안, 토큰, Keychain]
 comments: true
 share: true
 ---
-
-# flutter_secure_storage로 민감 정보 안전하게 저장
-
 ![보안 저장소](https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800&q=80)
 
 ## SharedPreferences는 왜 안 되나

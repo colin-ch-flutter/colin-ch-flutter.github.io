@@ -7,9 +7,6 @@ tags: [Flutter, CleanArchitecture, 아키텍처, 프로젝트구조]
 comments: true
 share: true
 ---
-
-# 클린 아키텍처 적용하기 - 대규모 Flutter 프로젝트 구조 설계
-
 ![아키텍처 설계](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80)
 
 ## 왜 클린 아키텍처인가

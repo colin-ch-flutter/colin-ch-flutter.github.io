@@ -7,9 +7,6 @@ tags: [Flutter, BLE, 블루투스, flutter_blue_plus, IoT]
 comments: true
 share: true
 ---
-
-# BLE(블루투스 저에너지) 기초 - flutter_blue_plus로 스캔 시작
-
 ![블루투스 IoT](https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&q=80)
 
 ## 왜 BLE가 필요한가

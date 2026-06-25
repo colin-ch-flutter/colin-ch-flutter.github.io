@@ -7,9 +7,6 @@ tags: [MQTT, IoT, 토픽설계, 아키텍처]
 comments: true
 share: true
 ---
-
-# MQTT 토픽 구조 설계 - IoT 기기 명령과 응답
-
 ![스마트홈 제어](https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80)
 
 ## 토픽 설계가 중요한 이유

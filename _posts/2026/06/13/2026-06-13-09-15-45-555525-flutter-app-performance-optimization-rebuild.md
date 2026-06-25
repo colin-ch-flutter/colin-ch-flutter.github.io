@@ -7,9 +7,6 @@ tags: [Flutter, 성능최적화, GetX, 리빌드, DevTools]
 comments: true
 share: true
 ---
-
-# Flutter 앱 성능 최적화 - 불필요한 리빌드 줄이기
-
 ![성능 최적화](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80)
 
 ## IoT 앱에서 성능이 중요한 이유

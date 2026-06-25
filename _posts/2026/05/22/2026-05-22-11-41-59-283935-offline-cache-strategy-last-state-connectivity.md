@@ -7,9 +7,6 @@ tags: [Flutter, 오프라인, 캐시, connectivity_plus, IoT]
 comments: true
 share: true
 ---
-
-# 오프라인 캐시 전략 - 인터넷 없어도 최후 상태 보여주기
-
 ![오프라인 캐시](https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80)
 
 ## IoT 앱에서 오프라인이 중요한 이유

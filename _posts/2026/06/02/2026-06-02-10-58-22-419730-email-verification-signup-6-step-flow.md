@@ -7,9 +7,6 @@ tags: [Flutter, 회원가입, 이메일인증, UX, 플로우]
 comments: true
 share: true
 ---
-
-# 이메일 인증 회원가입 6단계 플로우 구현
-
 ![회원가입 플로우](https://images.unsplash.com/photo-1526378800651-2e3b8c7cb34b?w=800&q=80)
 
 ## 회원가입 플로우 설계

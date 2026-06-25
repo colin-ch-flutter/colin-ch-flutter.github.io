@@ -7,9 +7,6 @@ tags: [Flutter, JWT, 토큰관리, 인증, 세션]
 comments: true
 share: true
 ---
-
-# JWT 토큰 자동 갱신 - 끊기지 않는 세션 관리
-
 ![인증 보안](https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800&q=80)
 
 ## JWT 기본 구조

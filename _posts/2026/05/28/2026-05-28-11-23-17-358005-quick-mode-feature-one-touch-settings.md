@@ -7,9 +7,6 @@ tags: [Flutter, 퀵모드, UX, 스마트홈, 기능설계]
 comments: true
 share: true
 ---
-
-# 퀵 모드 기능 설계 - 자주 쓰는 설정 원터치로
-
 ![스마트홈 퀵설정](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80)
 
 ## 퀵 모드란

@@ -7,9 +7,6 @@ tags: [Flutter, IoT, 스마트홈]
 comments: true
 share: true
 ---
-
-# Flutter로 IoT 앱 만들기 - 스마트홈 앱 개발 시작
-
 ![스마트홈 IoT 기기](https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80)
 
 ## 시작하게 된 계기

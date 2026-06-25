@@ -7,9 +7,6 @@ tags: [Flutter, BLE, BluFi, 패킷, Dart]
 comments: true
 share: true
 ---
-
-# BluFi 패킷 직접 구현하기 - 바이트 조작과 체크섬
-
 ![바이너리 코드](https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80)
 
 ## Dart로 바이트 다루기

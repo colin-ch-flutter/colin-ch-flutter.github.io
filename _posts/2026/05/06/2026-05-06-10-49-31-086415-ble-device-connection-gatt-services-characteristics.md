@@ -7,9 +7,6 @@ tags: [Flutter, BLE, GATT, flutter_blue_plus, IoT]
 comments: true
 share: true
 ---
-
-# BLE 기기 발견 후 연결하기 - GATT 서비스와 특성값 이해
-
 ![블루투스 연결](https://images.unsplash.com/photo-1589254065878-42c9da997008?w=800&q=80)
 
 ## GATT란

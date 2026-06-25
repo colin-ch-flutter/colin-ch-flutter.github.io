@@ -7,9 +7,6 @@ tags: [Flutter, 자동화, 스마트홈, IoT, UI]
 comments: true
 share: true
 ---
-
-# 자동화 설정 화면 구현 - 조건에 따른 자동 제어
-
 ![스마트홈 자동화](https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80)
 
 ## 자동화가 스마트홈을 진짜 '스마트'하게 만든다

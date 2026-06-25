@@ -7,9 +7,6 @@ tags: [Flutter, Firebase, RemoteConfig, 기능플래그, 앱배포]
 comments: true
 share: true
 ---
-
-# Firebase Remote Config로 서버 배포 없이 앱 동작 변경하기
-
 ![Firebase Remote Config](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80)
 
 ## Remote Config의 강력함

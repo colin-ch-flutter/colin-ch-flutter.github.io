@@ -7,9 +7,6 @@ tags: [Flutter, Repository패턴, CleanArchitecture, DI, GetX]
 comments: true
 share: true
 ---
-
-# Repository 패턴으로 깔끔한 데이터 레이어 구성
-
 ![코드 구조](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80)
 
 ## Repository 패턴이 필요한 이유

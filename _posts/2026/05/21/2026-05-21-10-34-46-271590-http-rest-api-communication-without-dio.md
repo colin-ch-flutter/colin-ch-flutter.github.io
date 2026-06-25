@@ -7,9 +7,6 @@ tags: [Flutter, HTTP, REST, API, json_serializable]
 comments: true
 share: true
 ---
-
-# http 패키지로 REST API 통신 구현 - Dio 없이도 충분하다
-
 ![API 통신](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80)
 
 ## Dio vs http 패키지

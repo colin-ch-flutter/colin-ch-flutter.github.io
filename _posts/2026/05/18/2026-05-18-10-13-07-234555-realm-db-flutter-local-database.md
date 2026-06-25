@@ -7,9 +7,6 @@ tags: [Flutter, Realm, 로컬DB, 데이터베이스]
 comments: true
 share: true
 ---
-
-# Realm DB 도입기 - Flutter에서 로컬 DB 사용하기
-
 ![데이터베이스](https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800&q=80)
 
 ## 왜 Realm을 선택했나

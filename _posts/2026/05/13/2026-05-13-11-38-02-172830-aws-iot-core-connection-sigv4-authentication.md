@@ -7,9 +7,6 @@ tags: [Flutter, MQTT, AWS, IoTCore, SigV4, 인증]
 comments: true
 share: true
 ---
-
-# AWS IoT Core에 연결하기 - SigV4 서명 인증
-
 ![클라우드 AWS](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80)
 
 ## AWS IoT Core를 선택한 이유

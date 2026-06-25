@@ -7,9 +7,6 @@ tags: [Flutter, MQTT, 연결관리, KeepAlive, 재연결]
 comments: true
 share: true
 ---
-
-# MQTT 연결 유지하기 - Keep-Alive, Will, Reconnect 전략
-
 ![네트워크 안정성](https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80)
 
 ## MQTT 연결이 끊기는 상황들

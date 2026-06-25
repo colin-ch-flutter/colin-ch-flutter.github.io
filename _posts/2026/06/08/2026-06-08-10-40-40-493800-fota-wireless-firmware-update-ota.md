@@ -7,9 +7,6 @@ tags: [Flutter, FOTA, 펌웨어, OTA업데이트, IoT]
 comments: true
 share: true
 ---
-
-# FOTA(무선 펌웨어 업데이트) - 앱에서 기기 펌웨어 업데이트
-
 ![펌웨어 업데이트](https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80)
 
 ## FOTA가 왜 필요한가

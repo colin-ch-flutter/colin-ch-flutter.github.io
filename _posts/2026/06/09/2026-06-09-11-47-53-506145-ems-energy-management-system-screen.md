@@ -7,9 +7,6 @@ tags: [Flutter, EMS, 에너지관리, fl_chart, IoT 모니터링 대시보드]
 comments: true
 share: true
 ---
-
-# EMS(에너지 관리 시스템) 화면 구현
-
 ![에너지 관리](https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80)
 
 ## EMS가 뭔가
