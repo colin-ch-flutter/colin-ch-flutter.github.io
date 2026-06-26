@@ -123,9 +123,15 @@ UX, 회고
 | CI 자동화 | GitHub Actions, flutter test --coverage, lcov | 1 |
 | Widget Test | IoT 제어 화면 WidgetTester, FakeController, pump vs pumpAndSettle | 1 |
 | Widget Test + CI | Unit·Widget 커버리지 합산, lcov merge, Codecov 뱃지 | 1 |
+| Golden Test | matchesGoldenFile, alchemist, IoT 카드 UI 스냅샷, CI 환경 폰트·DPR 불일치 해결 | 1 |
+| Integration Test | integration_test E2E, 타이밍 이슈, CI 실행 전략 | 1 |
+| E2E + Native | Patrol, BLE 권한 다이얼로그 자동화, 네이티브 OS 인터랙션 | 1 |
+| TDD 실전 | Red-Green-Refactor, BleController 설계 변화, 레이어별 TDD 적합성 | 1 |
+| 테스트 더블 패턴 | Dummy·Stub·Fake·Spy·Mock 비교, IoT 앱 레이어별 선택 기준, mocktail vs mockito | 1 |
+| 비동기 테스트 | fakeAsync, Timer·Stream 타이밍 제어, MQTT 재연결·BLE 스캔 타임아웃 테스트 | 1 |
 
-마지막 포스트: `_posts/2026/06/25/2026-06-25-14-00-00-703665-flutter-widget-test-ci-coverage-merge.md`  
-다음 일련번호: `716010`
+마지막 포스트: `_posts/2026/06/26/2026-06-26-16-00-00-790080-flutter-test-coverage-strategy-threshold.md`  
+다음 일련번호: `802425`
 
 ---
 
