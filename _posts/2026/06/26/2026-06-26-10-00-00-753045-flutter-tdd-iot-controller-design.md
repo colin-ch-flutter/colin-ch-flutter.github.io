@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# Flutter TDD 실전 — 테스트 먼저 짜면 IoT Controller 설계가 달라진다
-
 ![Flutter TDD 테스트 주도 개발 Red-Green-Refactor](https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80)
 
 TDD를 처음 들었을 때 솔직히 말도 안 된다고 생각했다. 코드도 없는데 뭘 테스트한다는 건지. 그런데 IoT 앱 테스트 시리즈를 진행하면서 생각이 바뀌었다. 테스트를 먼저 쓰면 클래스 설계가 달라진다. 특히 BleController 같은 외부 의존성이 많은 코드는, 테스트 코드를 먼저 써야만 주입 구조가 제대로 잡혔다.

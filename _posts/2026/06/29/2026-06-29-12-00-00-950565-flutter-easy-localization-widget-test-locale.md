@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# easy_localization 위젯 테스트 — Locale 격리와 다국어 UI 버그 잡기
-
 ![Flutter 다국어 위젯 테스트 Locale 격리](https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=800&q=80)
 
 `easy_localization`을 쓰는 위젯을 테스트하려고 하면 처음에 이런 오류가 난다. `'package:easy_localization/src/easy_localization_controller.dart': Failed assertion: line 282`. 번역 파일을 못 찾겠다는 건데, 이걸 해결하려고 `flutter_test`의 `rootBundle`을 건드리다가 시간을 날렸다. 핵심은 테스트 전용 `AssetLoader`를 만들어서 실제 json 파일 없이 번역 맵을 메모리에서 직접 제공하는 것이다.

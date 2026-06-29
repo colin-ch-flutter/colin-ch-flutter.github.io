@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# Flutter Integration Test로 IoT 앱 E2E 검증하기 — integration_test 실전 설정
-
 ![Flutter integration test E2E 앱 자동화 테스트 실행 화면](https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80)
 
 unit test로 Repository를 검증하고, widget test로 제어 화면을 확인하고, golden test로 UI 스냅샷까지 찍었는데도 "근데 실제로 앱 켜보면 왜 이상하지?"라는 상황이 생긴다. 그게 integration test가 필요한 이유다. Flutter integration_test 패키지를 IoT 앱에 붙여본 경험을 그대로 정리했다.

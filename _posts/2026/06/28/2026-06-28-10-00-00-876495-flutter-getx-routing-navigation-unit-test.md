@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# GetX 라우팅 단위 테스트 — 화면 전환 로직을 Flutter 없이 검증하는 법
-
 ![GetX 라우팅 단위 테스트 Flutter 코드 화면](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80)
 
 GetX 라우팅은 단위 테스트에서 `Get.testMode = true` 한 줄로 격리할 수 있다. BLE 연결 성공 → 디바이스 화면 이동, 토큰 만료 → 로그인 리다이렉트 같은 시나리오를 위젯 한 줄 없이 검증 가능하다. 문서에는 잘 안 나와 있는 내용인데, 한번 패턴을 잡아두면 나머지 화면 전환 테스트는 거의 복붙 수준이다.

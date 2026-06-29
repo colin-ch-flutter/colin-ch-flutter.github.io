@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# Dio 인터셉터 단위 테스트 — 401 자동갱신과 재시도 로직을 Flutter 없이 검증하는 법
-
 ![Dio HTTP 인터셉터 단위 테스트](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80)
 
 IoT 앱에서 API 요청이 실패할 때 가장 흔한 시나리오는 401이다. 액세스 토큰이 만료됐을 때 인터셉터가 자동으로 리프레시하고, 원래 요청을 재시도하는 로직 — 이게 생각보다 테스트하기 까다롭다.

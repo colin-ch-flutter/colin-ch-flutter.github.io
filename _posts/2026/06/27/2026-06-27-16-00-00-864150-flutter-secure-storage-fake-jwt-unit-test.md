@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# flutter_secure_storage 단위 테스트 격리 — FakeSecureStorage와 JWT 토큰 테스트
-
 ![Flutter 보안 스토리지 단위 테스트](https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80)
 
 `flutter_secure_storage`로 JWT 토큰을 저장하는 코드를 짜고, 단위 테스트를 붙이려는 순간 이게 뜬다.

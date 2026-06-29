@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# Flutter 테스트 더블 완전 정복 — Fake·Stub·Mock·Spy, IoT 앱에서 언제 뭘 쓸까
-
 ![소프트웨어 테스트 전략과 코드 품질](https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=800&q=80)
 
 이 시리즈에서 11편 동안 `FakeBleService`, `FakeMqttService`, `FakeDeviceRepository`를 줄곧 써왔다. 근데 정작 "왜 Mock 대신 Fake를 쓰냐"고 물으면 제대로 설명하기 어려웠다. 팀에 새 멤버가 들어왔을 때 "이건 Stub이야, Mock이야?" 소리 들으면 말문이 막힌다. 이번엔 테스트 더블 5종류를 이 시리즈 코드에 직접 대입해서 정리한다.

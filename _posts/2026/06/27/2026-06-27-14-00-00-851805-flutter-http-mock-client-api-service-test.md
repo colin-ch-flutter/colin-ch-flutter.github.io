@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# http.MockClient로 ApiService 단위 테스트 격리 — 서버 없이 401·오류 케이스 재현
-
 ![REST API 테스트 격리 전략](https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80)
 
 REST API 레이어를 테스트하려고 할 때 처음엔 막막했다. 실제 서버가 올라가야 하나? 테스트용 서버를 따로 띄워야 하나? IoT 앱에서 `http` 패키지를 쓰는 ApiService는 `http.get()` 전역 함수를 직접 호출하고 있어서 가로챌 방법이 없어 보였다. 근데 알고 보면 `package:http/testing.dart`의 `MockClient`를 쓰면 된다. ApiService 생성자에서 `http.Client`를 주입받도록 딱 한 줄 바꾸면, 테스트에서 모든 HTTP 응답을 직접 만들어 줄 수 있다.

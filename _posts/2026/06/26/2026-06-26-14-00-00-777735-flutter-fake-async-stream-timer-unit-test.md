@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# Flutter fakeAsync 비동기 테스트 - Timer·Stream 타이밍 이슈 완전 정복
-
 ![Flutter fakeAsync 비동기 테스트 타이머 제어](https://images.unsplash.com/photo-1501139083538-0139583c060f?w=800&q=80)
 
 MQTT 재연결 타이머를 테스트하려고 `await Future.delayed(Duration(seconds: 5))`를 호출했다가 테스트 스위트 전체가 30초 넘게 걸렸다. BLE 스캔 타임아웃 로직도 마찬가지였다. 실제 시간이 흐르길 기다리는 테스트는 느리고 CI에서 불규칙하게 실패한다. `fakeAsync`를 쓰면 5초짜리 타이머를 코드 한 줄로 즉시 진행시킬 수 있다.

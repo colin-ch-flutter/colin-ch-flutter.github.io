@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# Flutter shared_preferences 단위 테스트 — IoT 설정 저장소 격리 전략
-
 ![Flutter 앱 설정 저장소 테스트](https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&q=80)
 
 IoT 앱에서 `shared_preferences`는 BLE로 마지막에 연결한 기기 ID, MQTT 브로커 주소, 사용자 알림 설정처럼 가볍게 영속화할 값들을 담는다. 문제는 이게 플러그인 위에 얹혀 있어서, 그냥 unit test를 돌리면 `MissingPluginException`이 바로 튀어나온다는 것이다.

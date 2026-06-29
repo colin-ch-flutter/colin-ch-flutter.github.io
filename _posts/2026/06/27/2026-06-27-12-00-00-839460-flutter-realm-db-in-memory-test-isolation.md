@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# Flutter Realm DB 테스트 격리 — 인메모리 Realm으로 Repository 단위 테스트
-
 ![데이터베이스 테스트 격리 전략](https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800&q=80)
 
 IoT 앱에서 기기 상태를 로컬 캐시로 저장할 때 Realm을 쓴다. 빠르고 Flutter 친화적이고, MQTT로 받은 실시간 데이터를 오프라인에서도 보여줄 수 있어서다. 근데 이걸 테스트하려고 하면 벽에 부딪힌다. `realm.write()` 블록 안에서 호출되는 메서드는 Mockito로 mock이 안 된다.

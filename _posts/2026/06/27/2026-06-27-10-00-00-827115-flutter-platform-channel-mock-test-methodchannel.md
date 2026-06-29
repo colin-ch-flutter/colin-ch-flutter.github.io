@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# Flutter Platform Channel 테스트 — MethodChannel Mock으로 플러그인 격리하기
-
 ![Flutter 플랫폼 채널과 네이티브 레이어 테스트](https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80)
 
 IoT 앱을 테스트하다 보면 어느 순간 반드시 벽에 부딪힌다. BLE 권한 요청, 배터리 상태 조회, 네이티브 알림 스케줄링… 이런 건 전부 Platform Channel을 통해 네이티브 레이어와 통신한다. 그리고 테스트 환경에서는 그 네이티브 레이어가 없다.

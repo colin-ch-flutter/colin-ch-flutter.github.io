@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# Flutter 테스트 커버리지 전략 — 레이어별 목표 설정과 CI 강제
-
 ![Flutter 테스트 커버리지 리포트 화면](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80)
 
 Flutter에서 테스트 커버리지 목표를 설정하려면 레이어별로 다른 기준을 적용해야 한다. Domain 레이어는 90% 이상, Repository는 80% 이상, ViewModel/Controller는 70% 이상, Widget은 50% 수준이 현실적인 출발점이다. 모든 레이어에 동일한 기준을 적용하면 BLE/MQTT 연동 코드처럼 외부 의존성이 큰 부분에서 의미 없는 mock 테스트만 양산하게 된다.

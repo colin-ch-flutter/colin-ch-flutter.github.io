@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# Flutter 앱 생명주기 테스트 — WidgetsBindingObserver로 MQTT 재연결 로직 검증
-
 ![Flutter 앱 생명주기와 MQTT 연결 테스트](https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80)
 
 앱 생명주기 테스트는 처음에 어떻게 접근해야 할지 감이 안 잡혔다. `AppLifecycleState`가 바뀌는 걸 테스트 코드에서 어떻게 시뮬레이션하나? 실기기에서 홈 버튼 눌러보는 것 외엔 방법이 없는 줄 알았다. 근데 `WidgetsBinding.instance.handleAppLifecycleStateChanged()`를 직접 호출하면 된다. IoT 앱에서 백그라운드 전환 시 MQTT가 끊기고 복귀 시 자동 재연결하는 로직을 이 방식으로 완전히 단위 테스트할 수 있다.

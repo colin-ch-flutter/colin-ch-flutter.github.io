@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# Flutter 단위 테스트에서 DateTime 모킹 — package:clock으로 보일러 스케줄 로직 테스트하기
-
 ![Flutter 단위 테스트 DateTime 모킹 시계 개념](https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&q=80)
 
 보일러 스케줄 기능을 만들다가 단위 테스트에서 막혔다. `DateTime.now()`를 직접 호출하는 코드는 테스트에서 시간을 고정할 방법이 없어서 "오전 7시에 자동 켜짐" 같은 로직을 검증하는 게 사실상 불가능하다. 해결책은 `package:clock`으로 Clock을 주입하는 것이다.

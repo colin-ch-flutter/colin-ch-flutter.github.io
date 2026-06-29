@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# Flutter Patrol — BLE 권한 다이얼로그까지 E2E 자동화하기
-
 ![Flutter Patrol 모바일 앱 E2E 자동화 테스트 실행](https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=800&q=80)
 
 [지난 편에서 integration_test로 IoT 앱 E2E 흐름을 검증했다.]({% post_url 2026-06-25-18-00-00-728355-flutter-integration-test-iot-e2e %}) 근데 BLE 앱에서 치명적인 문제가 있다. Android에서 앱을 처음 실행하면 "블루투스 주변 기기 검색 허용?" 팝업이 뜨는데, `integration_test`는 이 **네이티브 OS 다이얼로그를 건드릴 수 없다.** Patrol은 이 한계를 깔끔하게 해결한다.

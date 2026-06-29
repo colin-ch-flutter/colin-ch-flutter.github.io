@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# Flutter Firebase 단위 테스트 — firebase_core 없이 Auth·RemoteConfig Fake로 격리하기
-
 ![Firebase 테스트 격리 개념 — 클라우드 없이 로컬에서 테스트](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80)
 
 `Firebase.initializeApp()`이 있는 클래스를 단위 테스트하려고 하면 처음엔 이런 에러가 뜬다.

@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# flutter_local_notifications 단위 테스트 — FakeNotificationService로 네이티브 없이 격리
-
 ![스마트홈 IoT 알림 테스트](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80)
 
 `flutter_local_notifications`를 유닛 테스트에서 그냥 호출하면 `MissingPluginException`이 터진다. 알림 로직을 테스트하려면 네이티브를 걷어내고 인터페이스 뒤로 숨겨야 한다. 인터페이스 추상화와 `FakeNotificationService`만 있으면 CI에서도, 시뮬레이터에서도 알림 로직을 완전히 격리해서 테스트할 수 있다.

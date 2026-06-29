@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-# Flutter 테스트 코드 정리법 — 공유 픽스처, TestHelper, Mother 패턴으로 중복 제거
-
 ![코드 리팩토링 작업 화면](https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&q=80)
 
 테스트가 10개 넘어가면 반드시 생기는 문제가 있다. `setUp()`에 똑같은 초기화 코드가 복사되고, `FakeRepository`를 만드는 코드가 파일마다 조금씩 다르게 중복된다. 처음엔 "나중에 정리하지" 했는데 20개 넘으면 손대기 싫어진다. 테스트 리팩토링을 안 하면 커버리지가 높아도 테스트 코드 자체가 짐이 된다.
