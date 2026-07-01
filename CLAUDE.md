@@ -131,8 +131,8 @@ UX, 회고
 | 비동기 테스트 | fakeAsync, Timer·Stream 타이밍 제어, MQTT 재연결·BLE 스캔 타임아웃 테스트 | 1 |
 | Firebase 격리 | firebase_core 없이 Auth·RemoteConfig Fake로 단위 테스트 격리, Crashlytics no-op | 1 |
 
-마지막 포스트: `_posts/2026/06/26/2026-06-26-20-00-00-814770-flutter-firebase-test-isolation-auth-remote-config-fake.md`  
-다음 일련번호: `827115`
+마지막 포스트: `_posts/2026/06/30/2026-06-30-10-00-00-999945-riverpod-notifier-getx-controller-migration-flutter-iot.md`  
+다음 일련번호: `1012290`
 
 ---
 
@@ -143,7 +143,7 @@ UX, 회고
 > **⚠️ `{% post_url %}` 사용 전 반드시 두 단계 확인:**
 > 1. `find _posts -name "*슬러그*"` — 로컬 존재 확인
 > 2. `git ls-files _posts/경로/파일명.md` — git push 여부 확인 (출력 없으면 미push = 빌드 실패)
-> 같은 세션에서 방금 만든 포스트는 참조 금지. push 완료 후 다음 포스트에서만 참조 가능.
+> 같은 세션에서 방금 만든 포스트는 참조 금지. push 완료 후 다른 포스트에서만 참조 가능.
 
 ```
 BLE 연결 기초    → _posts/2026/05/05/...-ble-bluetooth-basics-flutter-blue-plus-scanning.md
