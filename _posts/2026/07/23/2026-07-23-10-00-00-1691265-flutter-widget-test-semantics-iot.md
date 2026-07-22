@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Flutter Widget Test Semantics - IoT 제어 화면 접근성 검증하기"
-description: "Flutter Widget Test에서 SemanticsTester로 스마트홈 보일러 버튼의 음성 라벨, 현재 상태, 탭 액션을 검증하는 방법을 IoT 화면 기준으로 정리했다."
+description: "Flutter Widget Test에서 SemanticsTester로 스마트홈 보일러 버튼의 음성 라벨, 상태, 탭 액션을 검증하는 방법을 IoT 화면 기준으로 정리했다."
 date: 2026-07-23
 tags: [Flutter, Dart, IoT, 스마트홈, UX]
 comments: true
