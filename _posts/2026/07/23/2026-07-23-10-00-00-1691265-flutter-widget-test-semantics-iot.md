@@ -66,20 +66,7 @@ testWidgets('보일러 전원 Semantics를 노출한다', (tester) async {
 
 MQTT 명령을 보내는 동안 버튼을 막는다면 `enabled: false`와 `onTap: null`이 함께 반영돼야 한다. 단순히 스피너가 보이는지만 테스트하면 스크린 리더 사용자는 계속 탭 가능한 버튼으로 들을 수 있다.
 
-```dart
-testWidgets('명령 전송 중 전원 버튼을 비활성화한다', (tester) async {
-  await tester.pumpWidget(
-    MaterialApp(home: BoilerCard(isOn: true, isLoading: true)),
-  );
-
-  final semantics = SemanticsTester(tester);
-  expect(semantics, isNot(includesNodeWith(
-    label: '거실 보일러 전원',
-    actions: <SemanticsAction>[SemanticsAction.tap],
-  )));
-  semantics.dispose();
-});
-```
+이 상태는 `SemanticsTester`에서 같은 라벨에 `tap` 액션이 없는지 확인하면 된다. `enabled: false`만 화면에 반영하고 액션을 남겨두면 스크린 리더 사용자는 계속 탭 가능한 버튼으로 듣게 된다.
 
 ## 짧게 정리하면
 
