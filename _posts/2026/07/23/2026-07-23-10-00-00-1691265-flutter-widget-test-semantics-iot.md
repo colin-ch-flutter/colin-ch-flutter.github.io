@@ -10,7 +10,7 @@ share: true
 
 ![Flutter Widget Test Semantics로 검증하는 스마트홈 제어 화면](https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80)
 
-그림에서 봐야 할 부분은 카드 UI가 아니라, 보일러 상태를 보조기술도 읽을 수 있어야 한다는 점이다.
+핵심은 카드 UI가 아니라 보일러 상태를 보조기술도 읽는다는 점이다.
 
 Flutter Widget Test에서 픽셀과 텍스트만 확인하면 접근성 버그를 놓친다. 아이콘만 있는 전원 버튼에 라벨이 없거나, `켜짐` 상태가 음성 안내에 포함되지 않는 문제는 실제 기기에서야 발견된다. 이번에는 `SemanticsTester`로 이 조건을 테스트에 넣었다.
 
