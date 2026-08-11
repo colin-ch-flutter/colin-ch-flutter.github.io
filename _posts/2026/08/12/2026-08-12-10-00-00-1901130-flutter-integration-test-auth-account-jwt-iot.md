@@ -35,31 +35,23 @@ Flutter integration_test에서 테스트 계정 로그인이 가끔 실패한다
 Future<void> bootstrapE2eSession() async {
   const email = String.fromEnvironment('E2E_EMAIL');
   const password = String.fromEnvironment('E2E_PASSWORD');
-
-  if (email.isEmpty || password.isEmpty) {
-    throw StateError('E2E_EMAIL과 E2E_PASSWORD가 필요하다');
-  }
-
-  final authRepository = Get.find<AuthRepository>();
-  final result = await authRepository.login(
-    email: email,
-    password: password,
+  if (email.isEmpty || password.isEmpty) throw StateError('E2E 인증값 없음');
+  final result = await Get.find<AuthRepository>().login(
+    email: email, password: password,
   );
-
   await Get.find<SecureSession>().save(
-    accessToken: result.accessToken,
-    refreshToken: result.refreshToken,
+    accessToken: result.accessToken, refreshToken: result.refreshToken,
   );
 }
 ```
 
-코드 위의 함수는 화면을 건너뛰기 위한 편법이 아니라 기존 로그인 UseCase와 같은 저장 경로를 쓰기 위한 진입점이다. 테스트 코드에서 `flutter_secure_storage`를 직접 조작하면 Android Keystore와 iOS Keychain 차이가 생긴다. 실행 전에는 디버그용 MethodChannel로 앱의 `SecureSession.clear()`를 호출하고, 테스트 계정의 Space와 기기 데이터를 reset했다.
+이 함수는 기존 로그인 UseCase와 같은 저장 경로를 쓴다. 테스트 코드에서 `flutter_secure_storage`를 직접 조작하면 Android Keystore와 iOS Keychain 차이가 생긴다. 실행 전에는 앱의 `SecureSession.clear()`와 테스트 계정 데이터 reset을 함께 호출했다.
 
 ## 토큰보다 계정 데이터가 더 자주 문제였다
 
-JWT를 새로 발급해도 테스트 계정의 Space와 기기 상태가 남으면 결과는 달라진다. 그래서 인증 초기화와 데이터 초기화를 한 세트로 묶었다. [Flutter integration_test 테스트 데이터 격리]({% post_url 2026-08-10-16-00-00-1864095-flutter-integration-test-data-isolation-iot %})의 seed/reset 패턴을 인증 직후 실행하는 방식이다.
+JWT를 새로 발급해도 Space와 기기 상태가 남으면 결과는 달라진다. 인증 초기화와 데이터 초기화를 한 세트로 묶고, [Flutter integration_test 테스트 데이터 격리]({% post_url 2026-08-10-16-00-00-1864095-flutter-integration-test-data-isolation-iot %})의 seed/reset을 인증 직후 실행한다.
 
-특히 CI에서는 같은 계정을 Android와 iOS 매트릭스가 동시에 사용하지 않게 해야 한다. 계정별로 `E2E_RUN_ID`를 붙여 Space를 만들거나, 적어도 기기 목록과 알림 데이터를 실행별로 분리해야 한다. 고정 계정 하나를 공유하면 한쪽 테스트가 기기를 삭제한 순간 다른 플랫폼 테스트가 연쇄적으로 실패한다.
+CI에서는 같은 계정을 Android와 iOS 매트릭스가 공유하지 않게 한다. 계정별 `E2E_RUN_ID`로 Space를 만들거나 기기·알림 데이터를 실행별로 분리해야 한다.
 
 ## 정리
 
@@ -68,4 +60,4 @@ JWT를 새로 발급해도 테스트 계정의 Space와 기기 상태가 남으�
 - 세션 삭제와 테스트 계정 데이터 reset을 앱 실행 전에 함께 수행한다.
 - CI 플랫폼 매트릭스에서 테스트 계정을 공유하지 않는다.
 
-처음엔 로그인 성공 화면만 기다리면 충분하다고 생각했다. 실제로는 토큰 저장, Space seed, MQTT 연결 준비를 분리해서 기다려야 했다. 인증 부트스트랩을 고정하면 BLE와 MQTT 시나리오가 실패했을 때 원인을 기기 제어 쪽으로 좁힐 수 있다.
+처음엔 로그인 성공 화면만 기다리면 된다고 생각했다. 실제로는 토큰 저장, Space seed, MQTT 연결 준비를 분리해야 했다. 인증 부트스트랩을 고정하면 BLE와 MQTT 실패 원인을 기기 제어 쪽으로 좁힐 수 있다.
