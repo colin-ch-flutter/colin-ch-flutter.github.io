@@ -12,7 +12,7 @@ share: true
 
 이 그림처럼 테스트 워커마다 실행 환경과 연결 대상을 분리해야 한다. `Flutter integration_test`는 앱을 실제로 띄우므로 설정 하나가 빠지면 production MQTT에 붙을 수 있다.
 
-처음엔 GitHub Actions 명령에 `--dart-define=CONFIG=stage`만 추가하면 충분하다고 생각했다. 그런데 테스트 진입점에서 `const String.fromEnvironment`의 기본값을 `prod`로 둔 탓에, CI YAML 오타가 운영 설정으로 조용히 대체됐다. 테스트는 통과했지만 실제 기기 상태를 건드릴 위험이 있었다.
+처음엔 GitHub Actions에 `--dart-define=CONFIG=stage`만 넣으면 충분하다고 생각했다. 하지만 CI YAML 오타가 운영 기본값으로 조용히 대체될 수 있었다.
 
 ## 테스트 환경을 별도 값으로 고정하기
 
@@ -63,7 +63,6 @@ flutter test integration_test/boiler_control_test.dart \
 | 값 누락 | `prod` 기본값 사용 | 누락 즉시 실패 |
 | MQTT 연결 | 환경에 따라 자동 추론 | `staging-mqtt`만 허용 |
 | 앱 진입점 | 운영 `main()` 재사용 | integrationTest 모드 명시 |
-| CI 재실행 | 이전 빌드 설정 재사용 | 명령에 모든 define 기록 |
 
 `dart-define`에 비밀키를 넣으면 안 된다. 빌드 산출물과 CI 로그에 노출될 수 있으므로 endpoint와 모드만 전달하고, 인증 정보는 테스트 전용 Secret과 Fake 서비스로 분리한다.
 
