@@ -28,6 +28,18 @@ share: true
 
 실제 구현은 게임 규칙을 순수 Dart로 두고 Flutter가 제스처·레이아웃·애니메이션을 맡는 구조를 유지했다. 그래서 보드가 달라져도 병합 결과를 같은 방식으로 검증할 수 있었고, 작은 화면의 문제도 규칙 버그와 섞이지 않았다.
 
+## 구현 메모
+
+광고 요청 자체도 게임 종료 뒤에만 준비하고, 실제 표시 직전 상태를 다시 검사했다. 광고 SDK가 준비됐다는 사실과 이용자에게 보여도 되는 순간은 다른 조건이다.
+
+![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/04_night_garden_phone_1080x1920.png)
+
+이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
+
+## 참고 자료
+
+[Flutter 테스트 개요](https://docs.flutter.dev/testing/overview) · [Flutter 통합 테스트 안내](https://docs.flutter.dev/testing/integration-tests)
+
 [Google Play에서 Mergrove 설치하기](https://play.google.com/store/apps/details?id=com.ploopgames.mergrove)
 
 - 핵심: 첫

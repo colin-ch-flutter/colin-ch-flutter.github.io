@@ -28,6 +28,18 @@ Remote Config의 광고 기본값은 보수적으로 두고, 장애가 나면 �
 
 실제 구현은 게임 규칙을 순수 Dart로 두고 Flutter가 제스처·레이아웃·애니메이션을 맡는 구조를 유지했다. 그래서 보드가 달라져도 병합 결과를 같은 방식으로 검증할 수 있었고, 작은 화면의 문제도 규칙 버그와 섞이지 않았다.
 
+## 구현 메모
+
+공개 직전에는 변경 기록을 줄여야 원인을 추적할 수 있다. AAB와 스토어 등록정보를 고정한 뒤에는 피드백이 있어도 긴급 오류가 아닌 이상 다음 버전 후보로 분리했다.
+
+![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/01_core_merge_phone_1080x1920.png)
+
+이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
+
+## 참고 자료
+
+[Google Play 비공개 테스트 요구사항](https://support.google.com/googleplay/android-developer/answer/14151465?hl=en) · [테스트 트랙 설정 안내](https://support.google.com/googleplay/android-developer/answer/9845334?hl=en)
+
 [Google Play에서 Mergrove 설치하기](https://play.google.com/store/apps/details?id=com.ploopgames.mergrove)
 
 - 핵심: Remote
