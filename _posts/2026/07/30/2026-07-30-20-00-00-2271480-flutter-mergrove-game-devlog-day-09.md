@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/04_night_garden_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-09-phone_gems_en.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 되돌리기 저장본에는 타일 배열만이 아니라 현재 점수와 발견 목록 변경 전 상태가 필요했다. 둘 중 하나만 되돌리면 점수와 컬렉션이 어긋나는 버그가 생긴다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/01_core_merge_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

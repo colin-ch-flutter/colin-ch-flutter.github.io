@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/04_night_garden_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-04-feature-graphic.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 한 줄을 먼저 빈칸 없이 압축하고, 인접한 두 값을 한 번만 합친 뒤, 남은 칸을 다시 채운다. 이 순서를 명시하면 `[2,2,2]`가 `[4,2]`가 되는 예외도 설명 가능해진다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/01_core_merge_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/03_collect_discover_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-18-tablet_10_orchard.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 광고 제거 구매는 기기 변경 뒤에도 복원할 수 있어야 한다. 구매 스트림을 처리할 때 보류·실패·복원 상태를 구분하고, UI는 완료 신호를 받은 뒤에만 광고를 끈다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/05_ocean_life_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

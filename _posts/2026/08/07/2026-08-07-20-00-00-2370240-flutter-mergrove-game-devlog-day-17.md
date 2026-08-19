@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/02_garden_world_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-17-store_home.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 광고 요청 자체도 게임 종료 뒤에만 준비하고, 실제 표시 직전 상태를 다시 검사했다. 광고 SDK가 준비됐다는 사실과 이용자에게 보여도 되는 순간은 다른 조건이다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/04_night_garden_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

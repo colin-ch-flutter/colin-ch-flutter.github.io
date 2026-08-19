@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/03_collect_discover_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-13-store_collection_orchard_complete.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 모션 줄이기 설정은 단순히 애니메이션 시간을 0으로 바꾸지 않았다. 완료 콜백 순서를 유지해야 저장과 오버레이 타이밍이 일반 설정과 동일하게 작동한다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/05_ocean_life_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

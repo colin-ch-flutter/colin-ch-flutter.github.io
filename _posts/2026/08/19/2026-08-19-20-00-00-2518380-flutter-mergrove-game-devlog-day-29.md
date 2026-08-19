@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/04_night_garden_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-29-tablet_7_store_home.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ Remote Config의 광고 기본값은 보수적으로 두고, 장애가 나면 �
 ## 구현 메모
 
 공개 직전에는 변경 기록을 줄여야 원인을 추적할 수 있다. AAB와 스토어 등록정보를 고정한 뒤에는 피드백이 있어도 긴급 오류가 아닌 이상 다음 버전 후보로 분리했다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/01_core_merge_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

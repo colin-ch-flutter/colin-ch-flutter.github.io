@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/05_ocean_life_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-30-collection-source.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ Mergrove는 과일·꽃·보석을 합치는 4×4·5×5·6×6 퍼즐이다. Goog
 ## 구현 메모
 
 출시 후에도 엔진 테스트와 실제 플레이 테스트의 역할은 끝나지 않는다. 충돌 보고·설치 흐름·비공개 테스트 피드백을 같은 분류로 남기면 다음 업데이트에서 감으로 고치지 않게 된다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/02_garden_world_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/04_night_garden_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-24-tablet_7_orchard.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 비공개 테스트의 핵심은 초대 인원 수가 아니라 14일 동안 옵트인 상태가 유지되는지다. Tester Community에는 설치만 요청하지 않고 테스트 링크, 기간, 피드백 항목을 분리해 안내했다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/01_core_merge_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

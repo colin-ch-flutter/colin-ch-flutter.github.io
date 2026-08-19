@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/03_collect_discover_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-08-phone_forest_en.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 스와이프 임계값은 실제 화면 밀도와 관계없이 체감이 일정해야 했다. 대각선 이동은 더 큰 축만 채택하고, 임계값 아래의 움직임은 무효 처리해 스크롤과 오조작을 줄였다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/05_ocean_life_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

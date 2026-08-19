@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/02_garden_world_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-07-phone_6x6_en.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 다섯 테마의 공통 규칙은 같은데 배경과 타일만 달라야 했다. 테마를 전환해도 저장 형식과 엔진이 바뀌지 않는지 확인하는 것이 새 테마를 추가할 때의 안전망이 됐다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/04_night_garden_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

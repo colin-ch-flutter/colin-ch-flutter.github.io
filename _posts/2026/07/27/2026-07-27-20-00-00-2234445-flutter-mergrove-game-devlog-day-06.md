@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/01_core_merge_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-06-phone_5x5_en.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 자산 이름도 값과 분리했다. 같은 128이라도 테마에 따라 사과·꽃·보석이 될 수 있으므로, 점수 계산은 숫자로 하고 표현만 메타데이터가 맡도록 했다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/03_collect_discover_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

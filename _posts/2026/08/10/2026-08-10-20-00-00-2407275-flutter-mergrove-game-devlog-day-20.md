@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/05_ocean_life_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-20-tablet_10_store_collection_orchard_complete.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 정책 문구는 SDK 이름만 나열하지 않고 기능별로 연결했다. 예를 들어 로컬 저장은 게임판 복원용, Crashlytics는 오류 진단용, 광고 SDK는 동의 절차와 함께 설명했다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/02_garden_world_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

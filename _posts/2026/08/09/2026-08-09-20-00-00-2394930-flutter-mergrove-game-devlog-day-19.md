@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/04_night_garden_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-19-tablet_10_orchard_en.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 Remote Config의 기본값을 앱 안에도 둔 이유는 네트워크 실패 때문이다. 원격 값을 받지 못해도 광고 기본값과 최소 지원 버전 판단이 예측 가능하게 남아야 한다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/01_core_merge_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

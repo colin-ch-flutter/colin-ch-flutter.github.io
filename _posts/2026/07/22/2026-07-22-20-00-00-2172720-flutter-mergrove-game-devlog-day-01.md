@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/01_core_merge_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-01-garden-ocean-hero.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 기획 단계에서는 ‘완료’의 정의를 앱 실행이 아니라 스와이프 한 번으로 규칙을 이해하고, 종료 뒤 다시 시작할 이유가 남는 상태로 잡았다. 이 기준이 이후의 저장·컬렉션·스토어 이미지 판단을 줄 세우는 기준이 됐다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/03_collect_discover_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

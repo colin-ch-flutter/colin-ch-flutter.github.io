@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/02_garden_world_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-02-merge-burst.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 일정표에는 기능 목록과 별도로 위험 목록을 적었다. 플랫폼 설정, 개인 정보 문구, 테스터 참여 기간처럼 코드가 완성돼도 하루 안에 해결되지 않는 일은 앞쪽으로 당겼다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/04_night_garden_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

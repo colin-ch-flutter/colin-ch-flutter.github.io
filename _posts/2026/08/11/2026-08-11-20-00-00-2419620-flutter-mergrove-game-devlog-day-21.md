@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/01_core_merge_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-21-tablet_10_store_gameplay_classic_4x4.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 통합 테스트 캡처에는 화면 크기, 언어, 초기 보드와 점수를 고정했다. 같은 이미지가 다시 나와야 스토어 문구를 바꿔도 비교가 가능하고, 실제 UI 변경도 빨리 잡힌다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/03_collect_discover_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

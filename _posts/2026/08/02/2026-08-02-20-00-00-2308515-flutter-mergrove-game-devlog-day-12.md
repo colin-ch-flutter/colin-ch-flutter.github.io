@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/02_garden_world_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-12-phone_vegetable_en.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 마일스톤 오버레이는 결과를 확인하기 전까지 입력을 막는다. 축하 화면이 뜬 프레임에 새 이동이나 광고 요청이 겹치면 상태 복원과 분석 이벤트가 틀어질 수 있다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/04_night_garden_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 

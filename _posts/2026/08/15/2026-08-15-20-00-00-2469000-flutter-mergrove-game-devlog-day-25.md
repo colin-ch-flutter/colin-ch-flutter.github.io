@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-![Mergrove 게임 화면](https://ploop-games.web.app/assets/mergrove/05_ocean_life_phone_1080x1920.png)
+![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-25-tablet_7_orchard_en.png)
 
 이 그림에서는 실제 게임판과 테마의 색·타일 대비를 확인하면 된다.
 
@@ -31,10 +31,6 @@ share: true
 ## 구현 메모
 
 피드백 양식에는 ‘문제가 있었나요?’ 대신 기기 모델, Android 버전, 마지막 행동, 스크린샷을 요청했다. 한 줄 피드백도 재현 조건이 붙으면 수정 우선순위를 정할 수 있다.
-
-![Mergrove 보조 게임 화면](https://ploop-games.web.app/assets/mergrove/02_garden_world_phone_1080x1920.png)
-
-이 화면에서는 보드 밀도, 타일 구분, 상단 정보와 조작 영역의 간격을 함께 확인하면 된다.
 
 ## 참고 자료
 
