@@ -3,7 +3,7 @@ layout: post
 title: "내 폰에서는 괜찮았는데? 375px에서 다 무너진 화면"
 description: "작은 휴대폰 화면에서 Flutter 2048 보드의 읽기성을 잡은 방법."
 date: 2026-08-05
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

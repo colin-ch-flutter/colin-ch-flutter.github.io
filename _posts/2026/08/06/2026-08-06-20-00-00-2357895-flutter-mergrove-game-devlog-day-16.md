@@ -3,7 +3,7 @@ layout: post
 title: "점수만 보면 지루했다… 도감 화면을 넣은 진짜 이유"
 description: "발견·미발견 타일을 보여주는 Flutter 게임 컬렉션 화면 구현 판단."
 date: 2026-08-06
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

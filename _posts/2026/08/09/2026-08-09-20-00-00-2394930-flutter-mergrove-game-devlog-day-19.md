@@ -3,7 +3,7 @@ layout: post
 title: "오프라인 게임인데 Firebase를 왜 넣었냐고?"
 description: "Flutter 게임에서 Analytics·Crashlytics·Remote Config를 운영 도구로 쓰는 방식."
 date: 2026-08-09
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

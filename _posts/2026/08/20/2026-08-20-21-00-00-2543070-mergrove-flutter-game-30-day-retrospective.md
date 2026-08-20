@@ -3,7 +3,7 @@ layout: post
 title: "30일 만에 게임을 냈다… Mergrove를 만들며 진짜로 배운 것들"
 description: "Flutter 2048 게임 Mergrove를 기획부터 Play 스토어 비공개 테스트와 홈페이지까지 30일간 만들며 겪은 판단과 시행착오를 정리한 회고록."
 date: 2026-08-20
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

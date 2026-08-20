@@ -3,7 +3,7 @@ layout: post
 title: "4×4만 했는데 왜 6×6까지? 보드 욕심의 결말"
 description: "Flutter 게임에서 보드 크기를 고정하지 않고 공통 엔진으로 확장한 기록."
 date: 2026-07-26
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

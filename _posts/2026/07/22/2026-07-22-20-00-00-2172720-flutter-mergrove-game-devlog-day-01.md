@@ -3,7 +3,7 @@ layout: post
 title: "30일이면 되겠지? 2048 게임 기획부터 다시 멈춰 세운 이유"
 description: "Flutter로 2048 게임 Mergrove를 기획하며 30일 개발 범위와 출시 기준을 정리한 기록."
 date: 2026-07-22
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

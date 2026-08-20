@@ -3,7 +3,7 @@ layout: post
 title: "되돌리기 무한으로 넣을까? 딱 한 번만 준 이유"
 description: "Flutter 2048 게임의 undo 기능을 한 수로 제한해 전략성과 단순함을 맞춘 기록."
 date: 2026-07-30
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

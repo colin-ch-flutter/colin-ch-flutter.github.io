@@ -3,7 +3,7 @@ layout: post
 title: "테스터 12명 모았다고 끝이 아니었다… 피드백 지옥"
 description: "12인 비공개 테스트 피드백을 재현 가능성 기준으로 정리한 방법."
 date: 2026-08-15
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

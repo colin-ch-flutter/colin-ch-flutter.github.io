@@ -3,7 +3,7 @@ layout: post
 title: "대각선으로 쓱 했는데 왜 움직여? 스와이프 오작동 잡기"
 description: "GestureDetector로 2048 스와이프 방향을 안정적으로 판정한 과정."
 date: 2026-07-29
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

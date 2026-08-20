@@ -3,7 +3,7 @@ layout: post
 title: "2+2+2+2가 왜 안 되지? 첫 병합 버그에 멘붕한 날"
 description: "Flutter 2048 병합 로직에서 같은 타일이 한 번만 합쳐지게 만든 방법."
 date: 2026-07-25
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

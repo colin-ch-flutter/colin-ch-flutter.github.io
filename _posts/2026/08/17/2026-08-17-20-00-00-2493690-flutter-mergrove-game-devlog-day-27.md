@@ -3,7 +3,7 @@ layout: post
 title: "홈페이지 첫 화면에 기능 다 넣었다가 망할 뻔"
 description: "Flutter 게임 홈페이지에서 스크린샷·스토어 버튼·개인정보 링크를 배치한 이유."
 date: 2026-08-17
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

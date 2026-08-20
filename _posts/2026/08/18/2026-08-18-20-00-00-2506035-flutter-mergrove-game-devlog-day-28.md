@@ -3,7 +3,7 @@ layout: post
 title: "출시 전날까지 불안했던 것들: 12명 테스트의 현실"
 description: "Flutter 2048 게임의 비공개 테스트에서 점검한 튜토리얼·저장·광고·기기 조건."
 date: 2026-08-18
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "바로 플레이스토어 출시가 안된다고? ㅠㅠ 멘붕 온 사연"
 description: "Google Play 비공개 테스트를 위해 Tester Community에서 12명의 첫 테스터를 모집한 과정."
 date: 2026-08-14
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

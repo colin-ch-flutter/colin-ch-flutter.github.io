@@ -3,7 +3,7 @@ layout: post
 title: "2048 찍고 끝? 여기서 끝내기 싫었던 이유"
 description: "Flutter 2048 게임에서 목표 달성 후 플레이를 이어가게 한 오버레이 설계."
 date: 2026-08-02
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

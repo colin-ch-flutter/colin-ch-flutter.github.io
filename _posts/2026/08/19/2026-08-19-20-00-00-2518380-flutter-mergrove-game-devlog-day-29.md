@@ -3,7 +3,7 @@ layout: post
 title: "출시 전날, 새 기능을 꾹 참은 이유"
 description: "Flutter 게임 Play 스토어 공개 전날에 버그 수정과 등록 정보만 다듬은 이유."
 date: 2026-08-19
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

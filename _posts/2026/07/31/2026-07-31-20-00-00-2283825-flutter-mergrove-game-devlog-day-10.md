@@ -3,7 +3,7 @@ layout: post
 title: "앱 껐다 켰더니 내 게임이 사라졌다… 저장부터 고친 날"
 description: "SharedPreferences로 Flutter 게임판·점수·설정을 로컬 저장한 방법."
 date: 2026-07-31
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

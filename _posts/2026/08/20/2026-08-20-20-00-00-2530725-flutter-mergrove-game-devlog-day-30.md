@@ -3,7 +3,7 @@ layout: post
 title: "30일 만에 게임을 냈다… 그런데 진짜 시작은 지금"
 description: "Flutter로 만든 2048 머지 퍼즐 Mergrove의 기획부터 Play 스토어 등록까지 30일 회고."
 date: 2026-08-20
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

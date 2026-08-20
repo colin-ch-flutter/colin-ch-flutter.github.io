@@ -3,7 +3,7 @@ layout: post
 title: "2주면 끝날 줄 알았는데… 일정표를 다시 찢은 날"
 description: "Flutter 게임 개발에서 30일 계획을 기능·테스트·스토어 준비까지 나눈 방법."
 date: 2026-07-23
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

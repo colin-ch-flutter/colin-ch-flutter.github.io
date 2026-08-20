@@ -3,7 +3,7 @@ layout: post
 title: "게임 하나 소개하려고 홈페이지까지 만든 이유"
 description: "Tester Community 비공개 테스트와 Play 스토어 링크를 연결할 Mergrove 홈페이지 제작기."
 date: 2026-08-16
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

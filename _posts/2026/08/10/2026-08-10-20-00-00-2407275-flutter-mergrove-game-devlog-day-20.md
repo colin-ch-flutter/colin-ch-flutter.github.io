@@ -3,7 +3,7 @@ layout: post
 title: "개인정보처리방침, 복붙했다가 식은땀 난 이유"
 description: "Flutter 게임의 Firebase·광고 SDK와 개인정보처리방침을 맞춘 출시 준비."
 date: 2026-08-10
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

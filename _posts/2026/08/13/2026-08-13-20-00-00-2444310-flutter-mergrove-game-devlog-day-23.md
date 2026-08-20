@@ -3,7 +3,7 @@ layout: post
 title: "AAB 올리면 끝인 줄 알았는데, Play Console 체크 폭탄"
 description: "Flutter 게임을 Google Play에 올리기 전 패키지·AAB·데이터 보안을 확인한 기록."
 date: 2026-08-13
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

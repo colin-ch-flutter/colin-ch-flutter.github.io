@@ -3,7 +3,7 @@ layout: post
 title: "테마 다섯 개? 처음엔 미친 짓인 줄 알았다"
 description: "Flutter 게임의 과수원·채소·꽃·숲·보석 테마를 확장 가능한 데이터로 정리한 방법."
 date: 2026-07-28
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "스크린샷도 테스트로 찍는다고? 직접 해보니"
 description: "Flutter integration_test로 Play 스토어용 게임 스크린샷을 일관되게 준비한 과정."
 date: 2026-08-11
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

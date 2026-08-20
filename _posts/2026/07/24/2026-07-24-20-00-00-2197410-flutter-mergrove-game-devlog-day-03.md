@@ -3,7 +3,7 @@ layout: post
 title: "UI부터 만들면 망한다? 게임 엔진을 먼저 꺼낸 이유"
 description: "Flutter 2048 게임의 이동과 병합 규칙을 UI에서 분리해 테스트 가능하게 만든 구조."
 date: 2026-07-24
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

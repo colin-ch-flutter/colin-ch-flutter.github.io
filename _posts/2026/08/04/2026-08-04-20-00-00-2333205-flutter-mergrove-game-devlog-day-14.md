@@ -3,7 +3,7 @@ layout: post
 title: "테스트가 계속 깨져서… 엔진과 화면을 갈라버렸다"
 description: "BloomEngine 단위 테스트와 Flutter 위젯 테스트를 나눈 방식."
 date: 2026-08-04
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

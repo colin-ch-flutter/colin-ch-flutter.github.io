@@ -3,7 +3,7 @@ layout: post
 title: "광고 한 번 잘못 띄우면 게임이 끝난다"
 description: "Flutter 게임 전면 광고를 플레이 흐름을 해치지 않게 제한한 방법."
 date: 2026-08-07
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

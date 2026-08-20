@@ -3,7 +3,7 @@ layout: post
 title: "숫자만 합치는데 재미가 없었다… 과일 타일로 갈아엎은 이유"
 description: "Flutter 2048 게임의 숫자 타일을 과일 컬렉션으로 바꾼 디자인 판단."
 date: 2026-07-27
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

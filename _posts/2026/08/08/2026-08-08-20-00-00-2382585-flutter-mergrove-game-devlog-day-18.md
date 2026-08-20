@@ -3,7 +3,7 @@ layout: post
 title: "광고 제거 버튼 하나가 이렇게 피곤할 줄이야"
 description: "Flutter in_app_purchase로 비소모성 광고 제거 상품을 연결할 때의 기준."
 date: 2026-08-08
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

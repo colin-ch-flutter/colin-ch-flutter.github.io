@@ -3,7 +3,7 @@ layout: post
 title: "튜토리얼 3장 만들었다가 바로 지운 이유"
 description: "Flutter 게임의 첫 실행 튜토리얼을 최소화해 이탈을 줄인 과정."
 date: 2026-08-01
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

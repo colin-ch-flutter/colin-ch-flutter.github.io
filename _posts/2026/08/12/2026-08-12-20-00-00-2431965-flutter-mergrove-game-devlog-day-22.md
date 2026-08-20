@@ -3,7 +3,7 @@ layout: post
 title: "아이콘에 글자 넣지 마세요… 결국 다 지웠다"
 description: "Play 스토어용 Flutter 게임 아이콘과 feature graphic을 검토한 기준."
 date: 2026-08-12
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---

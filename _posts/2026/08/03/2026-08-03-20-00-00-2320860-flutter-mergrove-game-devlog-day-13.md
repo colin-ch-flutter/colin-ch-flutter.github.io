@@ -3,7 +3,7 @@ layout: post
 title: "진동이 좋다고 다 좋은 건 아니었다"
 description: "Flutter 게임의 햅틱 피드백과 reduced motion 옵션을 함께 설계한 기록."
 date: 2026-08-03
-tags: [Flutter, Dart, Android, 게임개발, PlayStore]
+tags: [Flutter, Mergrove, Dart, Android, 게임개발, PlayStore]
 comments: true
 share: true
 ---
