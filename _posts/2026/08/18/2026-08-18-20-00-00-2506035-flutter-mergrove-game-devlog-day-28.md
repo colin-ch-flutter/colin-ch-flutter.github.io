@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-28-tablet_7_store_gameplay_vegetable_4x4.png)
+![개발 과정 참고 이미지](https://images.unsplash.com/photo-1753715613831-9e48eac86813?auto=format&fit=crop&w=1400&q=80)
+
+[이미지 출처: Unsplash · Jakub Żerdzicki](https://unsplash.com/es/fotos/una-persona-codifica-mientras-toma-notas-QUtrcUo5-GI)
 
 320px 폭 Android, 375×812 화면, 태블릿을 포함해 첫 실행, 강제 종료 뒤 복원, 보드 크기 전환, 되돌리기, 2,048 이후 계속하기를 점검했다. 게임 종료가 아닌 순간에 광고가 끼어들지 않는지도 확인했다.
 

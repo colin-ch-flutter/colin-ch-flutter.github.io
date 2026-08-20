@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-02-merge-burst.png)
+![개발 과정 참고 이미지](https://images.unsplash.com/photo-1753715613831-9e48eac86813?auto=format&fit=crop&w=1400&q=80)
+
+[이미지 출처: Unsplash · Jakub Żerdzicki](https://unsplash.com/es/fotos/una-persona-codifica-mientras-toma-notas-QUtrcUo5-GI)
 
 게임 규칙만 만들면 끝날 것 같았지만, 실제 출시에는 저장·접근성·개인정보·스크린샷·테스트 모집이 함께 필요했다. 개발 18일, 품질과 스토어 8일, 비공개 테스트와 피드백 4일로 쪼갰다.
 

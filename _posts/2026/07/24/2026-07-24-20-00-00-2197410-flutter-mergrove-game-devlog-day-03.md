@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-03-gameplay-hero.png)
+![개발 과정 참고 이미지](https://images.unsplash.com/photo-1637563680361-3e7ee7599318?auto=format&fit=crop&w=1400&q=80)
+
+[이미지 출처: Unsplash · Penfer](https://unsplash.com/photos/a-man-sitting-in-front-of-a-laptop-computer-_kbLtjx-pT0)
 
 스와이프 처리와 병합 규칙을 한 위젯에 넣으면 애니메이션을 고칠 때 규칙도 흔들린다. `lib/game/bloom_engine.dart`를 순수 Dart 영역으로 두고, Flutter는 입력·화면·오버레이만 담당하게 분리했다.
 

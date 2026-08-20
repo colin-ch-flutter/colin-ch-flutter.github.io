@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-21-tablet_10_store_gameplay_classic_4x4.png)
+![개발 과정 참고 이미지](https://images.unsplash.com/photo-1753715613831-9e48eac86813?auto=format&fit=crop&w=1400&q=80)
+
+[이미지 출처: Unsplash · Jakub Żerdzicki](https://unsplash.com/es/fotos/una-persona-codifica-mientras-toma-notas-QUtrcUo5-GI)
 
 수동 캡처는 점수와 타일 배치가 매번 달라져 스토어 원고를 맞추기 어렵다. 정해진 보드·점수·테마 상태를 주입하는 통합 테스트를 만들어 과수원 플레이, 컬렉션, 큰 보드를 반복 캡처했다.
 

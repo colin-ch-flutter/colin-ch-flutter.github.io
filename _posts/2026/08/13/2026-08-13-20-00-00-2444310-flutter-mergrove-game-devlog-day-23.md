@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-23-tablet_10_store_home.png)
+![개발 과정 참고 이미지](https://p0.piqsels.com/preview/60/688/850/business-office-graphic-designer-planning.jpg)
+
+[이미지 출처: Piqsels 공개 이미지](https://www.piqsels.com/en/public-domain-photo-zkwuh)
 
 앱 이름, 패키지명 `com.ploopgames.mergrove`, 광고 포함 여부, 비소모성 광고 제거 상품, 공개 HTTPS 개인정보처리방침을 하나씩 대조했다. 릴리스 빌드에는 테스트 광고 ID가 남지 않도록 별도 확인했다.
 

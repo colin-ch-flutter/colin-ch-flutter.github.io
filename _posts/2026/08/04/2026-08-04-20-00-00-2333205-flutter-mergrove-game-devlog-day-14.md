@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-14-store_gameplay_classic_4x4.png)
+![개발 과정 참고 이미지](https://images.unsplash.com/photo-1753715613831-9e48eac86813?auto=format&fit=crop&w=1400&q=80)
+
+[이미지 출처: Unsplash · Jakub Żerdzicki](https://unsplash.com/es/fotos/una-persona-codifica-mientras-toma-notas-QUtrcUo5-GI)
 
 게임 규칙은 빠르게 수백 번 검증해야 하고, 화면은 실제 흐름을 검증해야 한다. 그래서 병합·점수·새 타일 생성은 순수 Dart 테스트로, 홈·테마 선택·튜토리얼은 위젯 테스트로 나눴다.
 

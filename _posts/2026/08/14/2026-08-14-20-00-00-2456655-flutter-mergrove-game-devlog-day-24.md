@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-24-tablet_7_orchard.png)
+![개발 과정 참고 이미지](https://images.unsplash.com/photo-1637563680361-3e7ee7599318?auto=format&fit=crop&w=1400&q=80)
+
+[이미지 출처: Unsplash · Penfer](https://unsplash.com/photos/a-man-sitting-in-front-of-a-laptop-computer-_kbLtjx-pT0)
 
 코드 테스트만 통과해도 실제 기기·설치 흐름·처음 보는 이용자의 행동은 알 수 없다. 그래서 Tester Community에 게임의 장르, 예상 플레이 시간, 피드백이 필요한 항목을 짧고 구체적으로 적어 12명의 첫 그룹을 모집했다.
 

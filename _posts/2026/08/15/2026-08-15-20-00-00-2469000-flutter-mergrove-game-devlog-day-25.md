@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-25-tablet_7_orchard_en.png)
+![개발 과정 참고 이미지](https://images.unsplash.com/photo-1753715613831-9e48eac86813?auto=format&fit=crop&w=1400&q=80)
+
+[이미지 출처: Unsplash · Jakub Żerdzicki](https://unsplash.com/es/fotos/una-persona-codifica-mientras-toma-notas-QUtrcUo5-GI)
 
 메시지 한 줄을 바로 기능 요청으로 바꾸면 우선순위가 흔들린다. 피드백은 설치 문제, 규칙 이해, 화면 읽기, 저장·오류, 광고 경험으로 나누고 기기·보드 크기·재현 절차를 함께 받았다.
 

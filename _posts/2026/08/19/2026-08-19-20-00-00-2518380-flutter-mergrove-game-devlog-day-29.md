@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-29-tablet_7_store_home.png)
+![개발 과정 참고 이미지](https://p0.piqsels.com/preview/60/688/850/business-office-graphic-designer-planning.jpg)
+
+[이미지 출처: Piqsels 공개 이미지](https://www.piqsels.com/en/public-domain-photo-zkwuh)
 
 마지막 날에는 좋은 아이디어가 가장 위험하다. 새 테마나 보상 기능은 미루고, AAB 서명, 패키지명, 개인정보처리방침 URL, 데이터 보안, 스토어 설명과 스크린샷 순서를 다시 확인했다.
 

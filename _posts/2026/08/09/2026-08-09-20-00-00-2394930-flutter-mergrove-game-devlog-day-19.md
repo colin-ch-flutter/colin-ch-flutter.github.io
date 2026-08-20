@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-19-tablet_10_orchard_en.png)
+![개발 과정 참고 이미지](https://images.unsplash.com/photo-1637563680361-3e7ee7599318?auto=format&fit=crop&w=1400&q=80)
+
+[이미지 출처: Unsplash · Penfer](https://unsplash.com/photos/a-man-sitting-in-front-of-a-laptop-computer-_kbLtjx-pT0)
 
 계정 없이 오프라인으로 즐기는 게임이 목표였지만, 출시 뒤의 오류와 광고 정책은 관찰할 방법이 필요했다. Firebase Analytics와 Crashlytics는 안정성 확인에, Remote Config는 최소 지원 버전과 광고 정책에만 사용했다.
 

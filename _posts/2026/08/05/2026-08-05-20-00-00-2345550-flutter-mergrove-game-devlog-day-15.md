@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-15-store_gameplay_vegetable_4x4.png)
+![개발 과정 참고 이미지](https://p0.piqsels.com/preview/60/688/850/business-office-graphic-designer-planning.jpg)
+
+[이미지 출처: Piqsels 공개 이미지](https://www.piqsels.com/en/public-domain-photo-zkwuh)
 
 에뮬레이터의 넓은 화면에서는 예뻤지만 375×812 크기에서는 상단 점수와 하단 버튼이 보드를 밀어냈다. 고정 타일 크기를 버리고 화면 폭·여백·보드 크기에서 계산하도록 바꿨다.
 

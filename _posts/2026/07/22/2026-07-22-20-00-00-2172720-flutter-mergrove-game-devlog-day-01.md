@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-01-garden-ocean-hero.png)
+![개발 과정 참고 이미지](https://p0.piqsels.com/preview/60/688/850/business-office-graphic-designer-planning.jpg)
+
+[이미지 출처: Piqsels 공개 이미지](https://www.piqsels.com/en/public-domain-photo-zkwuh)
 
 클래식 2048을 그대로 복제하지 않고, 같은 타일을 합치면 과일·꽃·보석 발견으로 이어지는 차분한 퍼즐로 방향을 잡았다. 이번 첫날에는 ‘한 손 조작’, ‘계정 없이 시작’, ‘오프라인 기본 플레이’ 세 가지를 고정했다.
 

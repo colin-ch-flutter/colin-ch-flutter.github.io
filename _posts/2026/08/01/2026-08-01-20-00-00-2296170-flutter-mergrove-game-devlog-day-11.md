@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-11-phone_orchard_en.png)
+![개발 과정 참고 이미지](https://images.unsplash.com/photo-1637563680361-3e7ee7599318?auto=format&fit=crop&w=1400&q=80)
+
+[이미지 출처: Unsplash · Penfer](https://unsplash.com/photos/a-man-sitting-in-front-of-a-laptop-computer-_kbLtjx-pT0)
 
 규칙 설명을 여러 장 넘기게 하면 퍼즐을 시작하기도 전에 닫아 버린다. 첫 게임에서 스와이프 방향과 같은 타일 병합만 보여주고, 실제 조작으로 바로 닫히게 만들었다.
 

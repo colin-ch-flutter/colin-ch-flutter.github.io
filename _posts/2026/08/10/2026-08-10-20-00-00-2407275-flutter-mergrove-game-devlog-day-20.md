@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-20-tablet_10_store_collection_orchard_complete.png)
+![개발 과정 참고 이미지](https://p0.piqsels.com/preview/60/688/850/business-office-graphic-designer-planning.jpg)
+
+[이미지 출처: Piqsels 공개 이미지](https://www.piqsels.com/en/public-domain-photo-zkwuh)
 
 개인정보처리방침을 템플릿으로 끝내면 실제 SDK와 어긋나기 쉽다. 로컬 저장 데이터, Analytics·Crashlytics, Remote Config, 광고 동의 흐름을 코드 기준으로 대조했다.
 

@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-04-feature-graphic.png)
+![개발 과정 참고 이미지](https://p0.piqsels.com/preview/60/688/850/business-office-graphic-designer-planning.jpg)
+
+[이미지 출처: Piqsels 공개 이미지](https://www.piqsels.com/en/public-domain-photo-zkwuh)
 
 처음에는 인접한 숫자만 합치면 된다고 생각했다. 하지만 `[2, 2, 2, 2]`를 한 번 움직였을 때 결과가 `[4, 4]`여야 한다는 점에서 단순 반복문이 무너졌다.
 

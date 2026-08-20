@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-27-tablet_7_store_gameplay_classic_4x4.png)
+![개발 과정 참고 이미지](https://images.unsplash.com/photo-1637563680361-3e7ee7599318?auto=format&fit=crop&w=1400&q=80)
+
+[이미지 출처: Unsplash · Penfer](https://unsplash.com/photos/a-man-sitting-in-front-of-a-laptop-computer-_kbLtjx-pT0)
 
 첫 화면에는 ‘차분한 타일 머지 퍼즐’이라는 한 줄, 실제 게임 이미지, Google Play 버튼을 배치했다. 이어서 4×4·5×5·6×6 보드와 다섯 자연 테마, 컬렉션·저장·되돌리기 기능을 보여줬다.
 

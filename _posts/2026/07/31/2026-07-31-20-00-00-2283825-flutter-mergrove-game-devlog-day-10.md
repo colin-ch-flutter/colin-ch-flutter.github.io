@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-10-phone_orchard.png)
+![개발 과정 참고 이미지](https://images.unsplash.com/photo-1753715613831-9e48eac86813?auto=format&fit=crop&w=1400&q=80)
+
+[이미지 출처: Unsplash · Jakub Żerdzicki](https://unsplash.com/es/fotos/una-persona-codifica-mientras-toma-notas-QUtrcUo5-GI)
 
 모바일 퍼즐은 한 판을 길게 이어가는 사람이 많다. 앱이 종료됐을 때 보드가 사라지면 좋은 점수보다 신뢰를 잃는다. 보드 값, 점수, 테마, 보드 크기, 발견 목록을 기기 저장소에 분리해 기록했다.
 

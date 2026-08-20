@@ -8,7 +8,9 @@ comments: true
 share: true
 ---
 
-![Mergrove 실제 게임·스토어 화면](/images/mergrove/day-08-phone_forest_en.png)
+![개발 과정 참고 이미지](https://images.unsplash.com/photo-1637563680361-3e7ee7599318?auto=format&fit=crop&w=1400&q=80)
+
+[이미지 출처: Unsplash · Penfer](https://unsplash.com/photos/a-man-sitting-in-front-of-a-laptop-computer-_kbLtjx-pT0)
 
 짧은 탭과 대각선 드래그가 섞이면 의도하지 않은 이동이 자주 생긴다. 시작점과 종료점의 가로·세로 차이를 비교하고, 일정 거리보다 작은 제스처는 무시하도록 했다.
 
