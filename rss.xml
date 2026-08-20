@@ -4,7 +4,7 @@
   <channel>
     <title>Colin Flutter</title>
     <link>https://colin-ch-flutter.github.io</link>
-    <description><![CDATA[Colin Flutter - Flutter IoT App Development Blog]]></description>
+    <description><![CDATA[Colin Flutter - Flutter 앱·게임 개발과 테스트, 배포 기록]]></description>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll</generator>
     <ttl>360</ttl>

@@ -3,7 +3,7 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "Colin Flutter IoT"
+name:               "Colin Flutter 개발 노트"
 
 author:
   facebook:         your-id
@@ -24,7 +24,7 @@ author:
 
 copyright:
   year:             2026
-  name:             Colin Flutter IoT
+  name:             Colin Flutter 개발 노트
 
 # Google-analytics
 google-analytics:
