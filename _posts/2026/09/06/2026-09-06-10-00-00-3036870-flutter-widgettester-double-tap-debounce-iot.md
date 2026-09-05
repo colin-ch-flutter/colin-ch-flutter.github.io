@@ -21,8 +21,6 @@ Flutter WidgetTester에서 버튼을 한 번 탭했다고 테스트가 끝난 �
 | 처리 중 두 번째 탭 | 적용 중 유지 | 1회 |
 | 처리 완료 후 탭 | 완료 후 새 실행 | 2회 |
 
-버튼이 잠긴 시간과 실제 명령 횟수를 같은 테스트에서 연결해야 한다.
-
 ## Fake로 Future 완료 시점을 제어한다
 
 두 번째 탭을 재현하려면 Repository의 응답을 테스트가 직접 완료할 수 있어야 한다.
@@ -48,8 +46,6 @@ Future<void> applyAwayMode() async {
 }
 ```
 
-두 번의 탭을 넣고 호출 수와 버튼 잠금을 확인한다.
-
 ```dart
 testWidgets('처리 중 연속 탭은 퀵모드를 중복 실행하지 않는다', (tester) async {
   final fake = FakeQuickModeRepository();
@@ -70,7 +66,7 @@ testWidgets('처리 중 연속 탭은 퀵모드를 중복 실행하지 않는다
 });
 ```
 
-`pumpAndSettle()`은 `Completer`가 끝나기 전 종료되지 않을 수 있다. 탭 직후 `pump()`하고, Future를 완료한 뒤 다시 한 프레임만 진행하면 실패 지점이 선명하다.
+`pumpAndSettle()` 대신 탭 직후 `pump()`하고 Future를 완료한 뒤 다시 한 프레임만 진행한다.
 
 `Timer` 기반 debounce는 네트워크 요청 중 재진입을 막지 못한다. 버튼은 `isSubmitting`으로 잠그고, 테스트에서는 `onPressed == null`과 Fake 호출 횟수를 함께 검사한다. `finally`에서 플래그를 되돌려 오류 뒤 영구 잠금도 막아야 한다.
 
